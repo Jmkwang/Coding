@@ -11,11 +11,16 @@ code use at ur own risk and for study only.
 
 上课笔记链接在下方
 未完成，仍在完善
+
 仅代表个人看法
+
 代码使用不保证后果
+
 仅供学习(doge)
 
 Your warranty now is void(LMAO).
+
+
 
 #Web basic         
 including: Basic-concept / HTML / CSS / DOM.
