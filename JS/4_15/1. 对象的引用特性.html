@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 对象的引用特性
+        // 对象的复制
+        // 对象的判断
+        // 对象 this
+        // 作业
+
+        // 对象的引用特性
+        var obj1 = {name: '崔＋栋'};
+
+        console.log(obj1);
+
+        // 将 obj1 赋值给 obj2 变量
+        var obj2 = obj1;
+
+        console.log(obj2);
+
+
+        // 去改变 obj1 的内容
+        obj1.name = '王文轩';
+
+        console.log(obj1);
+        console.log(obj2);
+
+        obj2.name = '黄表表';
+
+        console.log(obj1);
+        console.log(obj2);
+
+
+        // 对象的赋值
+        // 将一个对象赋值给另一个变量
+        // 进行引用：在赋值的过程中并不是将对象复制一份然后再保存到新变量中
+        // 而是告诉新变量我这个变量存储数据的位置（内存位置）
+        // 变量保存了一个内存的地址，程序通过这个可以去读取内存中内容
+        // 引用其实就是把内存地址复制一份给另一个变量。
+
+        console.log('=================================');
+        console.log(typeof []); // object
+
+        var arr1 = [10, 20, 30];
+        var arr2 = arr1;
+
+        // 改变内容之前打印一下
+        console.log(arr1);
+        console.log(arr2);
+
+        // 改变 arr2 的内容
+        arr2[0] = 40;
+
+        // 在次打印看区别
+        console.log(arr1);
+        console.log(arr2);
+
+
+        console.log('=================================');
+
+        var num1 = 10;
+        var num2 = num1; // 复制了一份
+
+        console.log(num1);
+        console.log(num2);
+
+        num2 = 30;
+
+        console.log(num1);
+        console.log(num2);
+
+    </script>
+</body>
+</html>

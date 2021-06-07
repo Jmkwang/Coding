@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.style p:nth-child(1) {
+			/* 设置字体样式(设置斜体) */
+			/* normal 正常字体 */
+			font-style: italic;
+		}
+
+		.style p:nth-child(2) i {
+			font-style: normal;
+		}
+
+		.variant span:nth-child(1), .variant span:nth-child(3) {
+			/* 设置小型的大写字母体 */
+			font-variant: small-caps;
+		}
+
+
+		.weight p:nth-child(1) {
+			/* 设置粗体 */
+			font-weight: bold;
+			/*font-weight: 700;*/
+		}
+
+		.weight p:nth-child(2) b {
+			font-weight: normal;
+		}
+		/*
+			bolder   比继承值更重(粗)
+			lighter  比继承值更轻(细)
+
+			web font(web字体)
+				网页专用字体, 网页专用字体粗细分为9个档次
+				100-900
+		*/
+ 
+		.size {
+			/* 设置字体的大小 */
+			font-size: 40px;
+		}
+
+		.family {
+			/* 设置字体 */
+			/*font-family: "宋体";*/
+
+			/* 一次设置多个字体, 第一个字体不存在则使用第二字体, 第二个不存则使用第三个 */
+			font-family: "黑体","楷体","宋体"
+		}
+
+		.font {
+			font: italic bold 16px / 50px "黑体","楷体","宋体";
+		}
+	</style>
+</head>
+<body>
+	<b>加粗</b>
+	<del>删除</del>
+	<i>斜体</i>
+
+	<div class="style">
+		<p>斜体</p>
+		<p><i>i标签</i></p>
+	</div>
+
+	<div class="variant">
+		<span>abcdefg</span>
+		<span>abcdefg</span>
+		<span>ABCDEFG</span>
+	</div>
+
+	<div class="weight">
+		<p>加粗</p>
+		<p><b>b标签</b></p>
+	</div>
+
+
+	<div class="size">
+		<p>大小</p>
+	</div>
+
+
+	<div class="family">
+		<p>文字</p>
+	</div>
+
+	<div class="font">
+		font简写属性
+	</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<h1>标题</h1>
+
+<!--
+	合并单元格
+		设置指定单元格占用的格子空间
+		行合并 rowspan="number"
+		列合并 colspan="number"
+-->
+
+<!-- 定义表格 -->
+<table border="1" align="center" bgcolor="#00ffff" cellpadding="10" cellspacing="0">
+	<caption>表格的标题</caption>
+	<!-- 定义行 -->
+	<tr>
+		<!-- 定义列 -->
+		<td width="100">2</td>
+		<td>1</td>
+		<td colspan="3">1</td>
+<!-- 		<td>1</td>
+		<td>1</td> -->
+	</tr>
+	<!-- 定义行 -->
+	<tr>
+		<!-- 定义列 -->
+		<th>1</th>
+		<th>1</th>
+		<th>1</th>
+		<th>1</th>
+		<th>1</th>
+	</tr>
+
+	<tr>
+		<!-- 定义列 -->
+		<td rowspan="3">3</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<!-- 定义列 -->
+		<td>4</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<!-- <td>1</td> -->
+	</tr>
+	<tr>
+		<!-- 定义列 -->
+		<td>5</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<!-- <td>1</td> -->
+	</tr>
+</table>
+
+</body>
+</html>

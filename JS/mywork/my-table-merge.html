@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //colspan属性是合并列，rowspan属性是合并行
+
+// 生成表格的时候：1. 指定大小; 2. 指定合并单元格;
+// 由于不知道会有多少参数，所以采用集合（数组、对象）来传递参数
+// 数组：有序集合（没有特定的名字）
+// 对象：无序集合，但是他可以去设定值的名字
+// 我只想用数组存，也可以，但是就是要明确每一个值的顺序
+
+// 手工表格合并的规则（流程）：
+// 1. 找到想要合并的格子，确定合并大小
+// 2. 给找到的格子中的左上角格子添加合并属性 rowspan 和 colspan
+// 3. 删除被合并的格子
+
+// 想一下怎么把这逻辑用代码实现？
+// 1. 人工找到想要合并的格子，确定合并大小
+// 2. 通过参数告诉函数要合并格子的位置和大小
+//      a. 合并的格子有0-无数个
+//      b. 每个合并大小和位置都不同，就需要保存多个位置和大小
+// 3. 知道合并那些格子之后，如何做到删除多余的格子，如果直接不生成的话那是不是就删除了呢？
+//    每一个格子都有坐标：坐标规则（行-列）
+// function getsize()
+        // {
+        //     return 1;
+        // }
+
+
+        // function getmerge()
+        // {
+        //     return 2;
+        // }
+
+        // function demo()
+        // {
+        //     var size = getsize(); // 1
+        //     var merge = getmerge(); // 2
+        // }
+
+
+        
+
+        function GetSize() {
+            var colnum = parseInt(prompt("输入列的大小："));
+            var rownum = parseInt(prompt("输入行的大小："));
+
+            // if (isNaN(colnum) == true){
+            //     alert("NaN")
+            // }
+            // if (isNaN(rownum) == true){
+            //     alert("NaN")
+            // }
+
+            var Size = [colnum, rownum]  //集合成数组
+            // console.log("size",Size);
+            return Size;   //return出去，使别的函数可以接收Size
+        }
+        
+
+        function GetMerge() {
+            
+            var MergeOrNot = prompt("是否合并单元格？ \n请回复“是”或“否”。");  //判断
+           
+            if (MergeOrNot == "1"){
+                var StartMergeColPst = parseInt(prompt("输入起始合并列的位置："));    
+                var StartMergeRowPst = parseInt(prompt("输入起始合并行的位置："));
+
+                var StartMergePst = [StartMergeColPst,StartMergeRowPst];  //集合成数组
+                // console.log("smg",StartMergePst);
+
+                // if (MergeColPst > colnum){
+                //     alert("MergeColPst > colnum");
+                // }
+                // if (isNaN(MergeColPst) == true){
+                //     alert("isNaN")
+                // }
+
+                var EndMergeColPst = parseInt(prompt("输入结束合并列的位置："));
+                var EndMergeRowPst = parseInt(prompt("输入结束合并行的位置："));
+
+                var EndMergePst = [EndMergeColPst,EndMergeRowPst]  //集合成数组
+                // console.log("emp",EndMergePst);
+
+                //拼接，以下是用最小值取准确起始地址、最大值取准确终止地址，防止有人反向拉范围
+                var AccuStartPst = [Math.min(StartMergeColPst,EndMergeColPst),Math.min(StartMergeRowPst,EndMergeRowPst)] 
+                var AccuEndPst = [Math.max(StartMergeColPst,EndMergeColPst),Math.max(StartMergeRowPst,EndMergeRowPst)]
+
+                var MergeArr = AccuStartPst.concat(AccuEndPst);  //把两个数组拼接起来，否则会出现数组内数组的情况
+                // console.log("ma",MergeArr);
+
+                // if (MergeRowPst > rownum){
+                //     alert("MergeRowPst > rownum");
+                // }
+                // if (isNaN(MergeRowPst) == true){
+                //     alert("isNaN")
+                // }
+                
+                return MergeArr;  //把结果抛出去，给别的函数接收
+            } else{return MergeOrNot = [0,0,0,0]}  //其他情况
+        }
+        // GetMerge();
+
+        function GetAll() {  //这个函数是用来调用上面函数，并接收返回值（return）的，作为一个缓存。
+            var SizeCache = GetSize();
+            var MergeCache = GetMerge();
+            // console.log("sc",SizeCache)
+            // console.log("mc",MergeCache)
+            var TableData = SizeCache.concat(MergeCache);  //把上面的结果拼接起来，总结
+            console.log("tabledata",TableData);
+            return TableData;  //抛出去给下面生成表格用
+        }
+
+
+        
+        function CreateTable() {
+            var Pass = GetAll(); //取TableData数组,传递给下面
+
+            //取出表格大小数据
+            var col = Pass[0];  //10 lie
+            var row = Pass[1];  //10 hang
+
+            //取出起始地址
+            var SMcol = Pass[2];  //1
+            var SMrow = Pass[3];  //3
+            //取出终结地址
+            var EMcol = Pass[4];  //3
+            var EMrow = Pass[5];  //4
+
+            //生成表格
+            var form = "<table>";
+            var colspan = EMcol - SMcol + 1;   
+            var rowspan = EMrow - SMrow + 1;   
+            // for (var rowcount = 0; rowcount < row; rowcount++){
+            //     form += "<tr>";
+
+            //     for (var colcount = 0; colcount < col; colcount++){
+            //         form += "<td"
+            //         // if ( SMrow == rowcount ){
+            //         // form += " rowspan = "  + '"' + rowspan + '"';
+            //         // if ( SMcol == colcount ){
+            //         // form += " colspan = " + '"' + colspan + '"';
+
+            //     }
+            //     }
+                
+            //         form += "></td>";
+            //     }
+
+                
+
+            //     form += "</tr>"
+            // }
+
+            for (var rowcount = 0; rowcount < row; rowcount++) {
+                form += "<tr>";
+                for (var colcount = 0; colcount < col; colcount++) {
+                    if (rowcount == SMrow && colcount == SMcol){
+                        
+                        form += "<td";
+                        form += " rowspan = "  + '"' + rowspan + '"';
+                        form += " colspan = "  + '"' + colspan + '"' + ">";
+                        
+                        form += "</td>"
+
+                        if (rowcount == SMrow) {
+                            colcount += 3;
+                        };
+                        
+                    }else{
+                        form += "<td>";
+                        form += colcount+",";
+                        form += rowcount;
+                        form += "</td>";
+                    }
+
+                }
+                form +="</tr>";
+            }
+
+            form += "</table>";
+            return form;
+        }
+        document.write(CreateTable());
+    </script>
+
+    <style>
+        table {
+            border: 2px solid peru;
+        }
+        td {
+            border: 2px solid orchid;
+            width: 50px;
+            height: 20px;
+        }
+    </style>
+</body>
+</html>

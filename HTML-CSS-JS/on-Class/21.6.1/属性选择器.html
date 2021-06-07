@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>属性选择器</title>
+       <style>
+              input[value] {
+                     color: pink;
+              }
+
+              /* 属性 = 值 */
+              input[type="password"] {
+                     color: salmon;
+              }
+
+              /* 选择属性值开头的某些元素 */
+              div[class^=icon] {
+                     color: seagreen;
+              }
+
+              /* 选择属性值结尾的某些元素 */
+              section[class$=date] {
+                     color: slateblue;
+              }
+
+              /* 选择属性值中含有的某些元素 */
+              b[class*=same] {
+                     color: springgreen;
+                     font-weight: 400;
+              }
+       </style>
+</head>
+<body>
+      
+       <input type="text" name="" id="" value="请输入用户名">
+       <input type="text" name="" id=""> <br />
+
+  
+       <input type="text" name="" id="">
+       <input type="password" name="" id=""> <br />
+
+       <div class="icon1">1</div>
+       <div class="icon2">2</div>
+       <div class="icon3">3</div>
+       <div class="icon4">4</div>
+       <div class="ioon5">我不是icon开头的</div> 
+
+       <section class="icon1-date">date结尾</section>
+       <section class="icon2-date">date结尾</section>
+       <section class="icon3-icoo">icoo结尾</section>
+
+       <b class="icon1-same-st">same</b>
+       <b class="icon2-same-st">same</b>
+       <b class="icon2-dif-st">dif</b>
+</body>
+</html>

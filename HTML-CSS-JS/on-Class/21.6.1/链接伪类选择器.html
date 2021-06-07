@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>链接伪类选择器</title>
+       <style>
+              a {
+                     text-decoration: none;
+                     color: #333;
+              }
+
+              /* 未被访问的链接 a:link  */
+              a:link {
+                     color: #333;
+                     text-decoration: none;
+              }
+
+              /* 被访问过的链接 */
+              a:visited {
+                     color: tomato;
+              }
+
+              /* a:hover 鼠标停留时 */
+              a:hover {
+                     color: steelblue;
+              }
+
+              /* a:active 鼠标点击未松开 */
+              a:active {
+                     color: purple;
+              }
+
+              /* 聚焦后的属性设置 */
+              input:focus {
+                     background-color: wheat;
+              }
+       </style>
+</head>
+
+<body>
+       <a href="#">小猪佩奇</a>
+
+       <input type="text" placeholder="佩奇的爸爸叫什么">
+
+</body>
+
+</html>

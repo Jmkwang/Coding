@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.table {
+			border: 1px solid red;
+
+			width: 200px;
+
+
+			/* 设置表格的布局方式为固定布局 */
+			table-layout: fixed;
+			table-layout: auto;
+
+
+			/* 设置边框是否合并 */
+			border-collapse: collapse;
+			border-collapse: separate;
+
+
+			/* 设置单元格的间距 */
+			/*border-spacing: x y;*/
+			/*border-spacing: xy;*/
+
+			/*border-spacing: 20px;*/
+			border-spacing: 30px 10px;
+
+
+			/* 设置标题的显示位置 */
+			caption-side: bottom;
+			caption-side: top;
+
+			/* 设置单元格为空是否隐藏边框 */
+			empty-cells: hide;
+			empty-cells: show;
+		}
+
+		.table td {
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+<table class="table">
+	<caption>Title</caption>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td></td>
+		<td>3---------------</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td></td>
+		<td>3-------</td>
+	</tr>
+</table>
+</body>
+</html>

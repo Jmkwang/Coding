@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		/* 伪对象选择器 */
+		/* 使用css创建一个内容显示在网页上 */
+		/* 前面 */
+		.box:before {
+			/*content: 'before';*/
+			content: url(./favicon.ico);
+
+			/* 直接可以写样式设置 */
+			color: red;
+		}
+
+		/* 后面 */
+		.box:after {
+			content: 'after';
+		}
+	</style>
+</head>
+<body>
+
+<div class="box">
+	<p>123</p>
+</div>
+
+</body>
+</html>

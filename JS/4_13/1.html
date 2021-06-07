@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 数组中可以有任意的数据
+        // 如果数组下面还是保存数组
+        // 应该怎么写呢？
+        // 应该怎么读取呢？
+
+        // 单独写一个数组一维数组
+        // 数组套数组我们叫做二维数组
+        // 数组中的数组再去套一个数组叫做多维数组
+
+        // 已知如果要给数组添加内容，只需要把内个内容用逗号隔开即可
+        var arr1 = [
+            [1, 2, 3],
+            [4, 5, 6],
+        ];
+
+        console.log(arr1); 
+
+        // 怎么读取数组中的内容
+        // 想要拿数组中的值，在变量后写上一个中括号，中括号中间写上索引。
+        console.log(arr1[0]);
+
+        // 既然加数组加中括号就能拿数组下的值
+        // 既然 arr1[0] 表达的结果为 一个数组，那么我们能不能在后面再写一个中括号呢？
+        // 一定要搞清楚：这一行代码执行完后，到底是返回一个值，还是说是系统的语法。
+        console.log(arr1[0][1]);
+    </script>
+</body>
+</html>

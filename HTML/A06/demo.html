@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<!-- ismap 获取点击的坐标 -->
+<a href="./demo.html">
+	<img src="./2.jpg" ismap height="500">
+</a>
+<hr>
+
+<!--
+	usemap 使用图像映射
+		可以使用 <map> <area> 去定义一些映射， 当我们点击指定的位置时
+		则会跳转到一个指定的网址
+-->
+<img src="./2.jpg" height="500" usemap="#dog">
+
+<!-- 
+	<map> 定义图像映射规则列表
+	<area> 定义具体的规则
+-->
+
+<map name="dog">
+	<area shape="rect" coords="160,71,235,128" href="https://www.baidu.com/s?wd=黄彪彪">
+	<area shape="circ" coords="310,298,120" href="https://www.baidu.com/s?wd=文卓">
+	<area shape="poly" coords="409,83,451,151,366,137" href="https://www.baidu.com/s?wd=王海珊">
+
+</map>
+</body>
+</html>

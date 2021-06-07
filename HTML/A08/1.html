@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<form>
+	
+	<!-- 定义文本域 -->
+	<!--
+		设置文本域的大小
+		cols 一行内可以显示多少文字
+		rows 不出现滚动条可以显示多少行的文字
+	-->
+	<!--
+		文本域没有 value 属性
+		文本域在开始标签和结束标签之间的内容就是 value
+	-->
+	<!--
+		readonly 只读
+			能看不能改
+		disabled
+			禁用和只读的区别: 禁用的输入框或者单选... 那对应的值不会提交
+	-->
+	<input type="text" readonly value="123" name="">
+	<textarea readonly name="" cols="50" rows="10">直接写中间</textarea>
+
+	<hr>
+
+	<!-- 定义下拉选择框 -->
+	<select name="">
+		<!-- 定义选项 -->
+		<option value="选中后要被提交的数据">显示在下拉中的文字1</option>
+		<option value="选中后要被提交的数据">显示在下拉中的文字2</option>
+		<option value="选中后要被提交的数据">显示在下拉中的文字3</option>
+		<option value="选中后要被提交的数据">显示在下拉中的文字4</option>
+	</select>
+
+	<!-- 定义多选框 -->
+	<select name="" multiple size="10">
+		<option value="">选项1</option>
+		<option value="">选项2</option>
+		<option value="">选项3</option>
+		<option value="">选项4</option>
+		<option value="">选项5</option>
+	</select>
+
+	<!-- 指定选项分组选择列表框 -->
+	<select name="">
+		
+		<!-- 定义分组 -->
+		<optgroup label="分组的名称">
+			<option value="">1</option>
+			<option value="">2</option>
+			<option value="">3</option>
+		</optgroup>
+		
+		<!-- 定义分组 -->
+		<optgroup label="分组的名称">
+			<option value="">1</option>
+			<option value="">2</option>
+			<option value="">3</option>
+		</optgroup>
+
+		<optgroup label="电脑">
+			<option class="">轻薄本</option>
+			<option class="">游戏本</option>
+			<option class="">商务本</option>
+		</optgroup>
+	</select>
+
+	<hr>
+
+	<!-- 定义一个html的标注 -->
+	<!--
+		placeholder  在输入框内定义一个灰色的提示文字
+	-->
+	<label for="user">用户明:</label>
+	<input type="text" id="user" name="" placeholder="请输入用户名">
+
+	<!-- 定义一个按钮 -->
+	<!-- 按钮的默认效果时提交表单 -->
+	<!--
+		type
+			button  普通按钮
+			submit  提交
+			reset   重置
+	-->
+	<button>显示的文字</button>
+	<button type="reset">reset</button>
+	<button type="button">普通按钮</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		/* 伪类选择器 */
+		a:link {
+			color: yellow;
+		}
+
+		a:visited {
+			color: green;
+		}
+
+		a:hover {
+			font-size: 2em;
+		}
+
+		a:active {
+			background-color: #ccc;
+		}
+
+		input:focus {
+			border:1px solid pink;
+		}
+
+		span:lang(zh) {
+			color: red;
+		}
+
+		div p:first-child {
+			background-color: yellow;
+		}
+
+		div p:last-child {
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+<a href="http://ximeng.online/?a=2">To Ximeng</a>
+
+<p>
+	<input type="text" name="">
+</p>
+
+<span lang="en">123</span>
+<span lang="zh">中文</span>
+
+<div>
+	<p class="first">p1</p>
+	<p>p2</p>
+	<p class="last">p3</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var chengji = Number(prompt('请输入成绩'));
+        // if (isNaN(chengji));
+        //     console.log("你输入的不是数字")
+        // if (chengji >=90 && chengji <=100) {
+        //     console.log("优")
+        // } else if (chengji >= 80 && chengji <= 89) {
+        //     console.log("良")
+        // } else if (chengji >= 70 && chengji <= 79) {
+        //     console.log("中")
+        // }else if (chengji >= 60 && chengji <= 69) {
+        //     console.log("及格")
+        // }else if (chengji <60) {
+        //     console.log("不及格")
+        // }
+
+        var chengji = Number(prompt("请输入成绩："));
+        switch (parseInt(chengji / 10)) {
+            case 9:
+                document.write("优");
+                break;
+            case 8:
+                document.write("良");
+                break;
+            case 7:
+                document.write("中");
+                break;
+            case 6:
+                document.write("及格");
+                break;
+            case 5:
+                document.write("不及格");
+                break;
+            default:
+                document.write("不符合");
+                console.log("bfh");
+        }
+    </script>
+</body>
+
+</html>

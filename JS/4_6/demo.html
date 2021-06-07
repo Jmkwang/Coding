@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        td {
+            width: 50px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <script src="./table.js"></script>
+    <script>
+
+        // 刚刚逻辑并不复杂
+        // 主要就做了一件事情
+        // 把一些小的功能拆分成为了独立函数
+
+        // 生成表格的参数
+        var options = {
+
+            // 传递生成多大的表格
+            row: 5, // 行
+            col: 5, // 列
+
+
+            // 合并单元格
+            // 依赖于：rowspan、colspan两个属性
+            // 合并一般会只有一个吗？
+            // 0次，1次，多次
+            merge: [
+                // 用对象来表示一个合并项
+                {
+                    r: 1, // 行
+                    c: 1, // 列
+                    rs: 1, // 行合并数
+                    cs: 2, // 列合并数
+                },
+            ],
+        };
+
+        // 调用生成表格函数
+        var t = generateTable(options);
+
+        // 输出表格
+        document.write(t);
+    </script>
+</body>
+</html>

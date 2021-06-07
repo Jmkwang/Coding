@@ -1,0 +1,45 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+.container {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.TopNav {
+    background-color: #333333;
+    height: 40px;
+    font-size: 12px;
+    min-width: 1226px;
+}
+
+.TopNav .LeftTopNavBox {
+    float: left;
+}
+
+.TopNav .RightTopNavBox {
+    float: right;
+}
+
+.TopNav a {
+    color: #b0b0b0;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: auto;
+}
+
+.TopNav a:hover {
+    color: white;
+}
+
+.TopNav .sep {
+    color: #3f3935;
+    margin: 0 4px;
+}

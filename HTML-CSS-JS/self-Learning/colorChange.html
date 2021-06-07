@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colorChange</title>
+</head>
+<body>
+    <p>A</p>
+    <div id="colorChangeA">
+    </div>
+    <p>B</p>
+    <div id="colorChangeB">
+    </div>
+</body>
+<style>
+    #colorChangeA {
+    width: 300px;
+    height: 200px;
+    background: red  no-repeat top left/5px 5px;
+    animation: moveA 5s infinite;
+    }
+
+    @keyframes moveA {
+        50% {background: blue bottom right/50px 50px;}
+    }
+
+    #colorChangeB {
+    width: 300px;
+    height: 200px;
+    background: purple repeat bottom right/10px 5px;
+    animation: moveB 3s infinite;
+    }
+
+    @keyframes moveB {
+        20% {background: yellow top left/70px 50px;}
+    }
+</style>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+<p style="direction: ltr;">
+	:ltr	
+</p>
+
+<p style="direction: rtl;">
+	:rtl
+</p>
+
+<!-- 强制要求按照设置的方向来显示文字 -->
+<p style="direction: rtl; unicode-bidi: bidi-override;">
+	:rtl
+</p>
+
+<p style="direction: rtl; unicode-bidi: bidi-override;">
+	الاستهلاك الحالي(<span style="unicode-bidi: embed; direction: ltr;">本次消费</span>): $20
+</p>
+
+<p style="direction: ltr; unicode-bidi: bidi-override;">
+	本次消费(<span style="unicode-bidi: embed; direction: rtl;">الاستهلاك الحالي</span>): ￥18
+</p>
+</body>
+</html>

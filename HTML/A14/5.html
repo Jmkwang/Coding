@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.test {
+			border: 1px solid black;
+		}
+
+		.test a {
+			border: 1px solid red;
+			/*line-height: 2;*/
+		}
+
+		.baseline {
+			vertical-align: baseline;
+		}
+
+		.sub {
+			vertical-align: sub;
+		}
+
+		.super {
+			vertical-align: super;
+		}
+
+		.top {
+			vertical-align: top;
+		}
+
+		.bottom	{
+			vertical-align: bottom;
+		}
+
+		.py	{
+			/*vertical-align: -50%;*/
+			vertical-align: 100px;
+		}
+
+		.middle {
+			vertical-align: middle;
+		}
+
+		.text-top {
+			vertical-align: text-top;
+		}
+		.text-bottom {
+			vertical-align: text-bottom;
+		}
+
+		.line {
+			border: 1px solid red;
+
+			/* 主要就是用来做垂直居中效果 */
+			line-height: 60px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<!-- 内容的垂直对其方式 -->
+<!--
+只能够作用于行内元素和行内块元素上
+-->
+<ul>
+	<!-- 什么是基线: 文字x底部延伸出来的一条线 -->
+	<li class="test">
+		<strong>基线对齐</strong><br>
+		参考内容<a href="?" class="baseline">baseline  x</a>
+	</li>
+	<li class="test">
+		<strong>下标</strong><br>
+		参考内容<a href="?" class="sub">sub</a>
+	</li>
+	<li class="test">
+		<strong>上标</strong><br>
+		参考内容<a href="?" class="super">super</a>
+	</li>
+	<li class="test">
+		<strong>顶部</strong><br>
+		参考内容<a href="?" class="top">top</a>
+	</li>
+	<li class="test">
+		<strong>底部</strong><br>
+		参考内容<a href="?" class="bottom">bottom</a>
+	</li>
+	<li class="test">
+		<strong>偏移</strong><br>
+		参考内容<a href="?" class="py">py</a>
+	</li>
+	<li class="test">
+		<strong>居中</strong><br>
+		参考内容<a href="?" class="middle">middle</a>
+	</li>
+	<li class="test">
+		<strong>text-top</strong><br>
+		参考内容<a href="?" class="text-top">text-top</a>
+	</li>
+	<li class="test">
+		<strong>text-bottom</strong><br>
+		参考内容<a href="?" class="text-bottom">text-bottom</a>
+	</li>
+</ul>
+
+<p class="line">
+	wenzi
+</p>
+</body>
+</html>

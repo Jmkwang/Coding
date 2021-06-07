@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 怎么遍历二维数组和多维数组
+        
+        // 二维数组：有固定格式的二维数组
+        var arr1 = [
+            ['黄彪彪', 18, 150, 120],
+            ['王文轩', 19, 149, 200],
+            ['王海珊', 80, 123, 321],
+        ];
+
+        // 取出黄标标的名字：arr[0][0]
+        for (k in arr1) {
+
+            // 此处只是我顺手定义的一个变量
+            var tmp_arr = arr1[k];
+
+            console.log(tmp_arr);
+
+            // for (i in tmp_arr) {
+            //     console.log(tmp_arr[i]);
+            // }
+
+            console.log('姓名：', tmp_arr[0], '年龄：', tmp_arr[1], '身高：', tmp_arr[2], '体重：', tmp_arr[3] + '斤')
+        }
+
+
+        console.log('----------------------------');
+
+        // 不规则的数组
+        var arr2 = [
+            100,
+            [200, 400, 900],
+            true,
+            [1, 2, 3, 4, 5, 6, 6, 7],
+            [
+                [10, 20],
+                [30, 40],
+                [50, 60],
+                [70, 80]
+            ]
+        ];
+
+
+        // 如果想要拿到二维数组：arr2[3][1]
+        console.log(arr2[3][1]);
+
+        // 如果想要拿到多维数组：arr2[3][1]
+        console.log(arr2[4][3][1]);
+
+        // 怎么遍历一个不规则的多维数组呢？
+        // 递归函数
+        function each(arr)
+        {
+            // arguments.callee 这个就表示当前函数
+            for (i in arr) {
+                var tmp_item = arr[i];
+
+                if (Array.isArray(tmp_item)) {
+                    // 是一个数组的时候就去再次遍历
+                    arguments.callee(tmp_item);
+                } else {
+                    // 不是数组则直接输出内容
+                    console.log(tmp_item);
+                }
+            }
+            
+        }
+
+        // 函数调用
+        each(arr2);
+    </script>
+</body>
+</html>

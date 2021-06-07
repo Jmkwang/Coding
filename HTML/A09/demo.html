@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>css 单位</title>
+</head>
+<body>
+<!--
+	长度单位
+		网页的默认文字大小一般是 16px
+		px
+			像素
+		em
+			倍数, 根据父级的大小
+	颜色单位
+		1. 预定义颜色值: red green pink blue black white
+		2. 使用16进制颜色值: #000000 ~ #FFFFFF	
+			每两位表示一个颜色 rgb；0xFF = 255
+			同时他可以简写: #0F0 => #00FF00
+		3. 使用 rgb(r,g,b) 函数来定义颜色
+			rgb(0~255,0~255,0~255)
+			rgba(0~255,0~255,0~255,0~1) 带透明度的颜色
+
+	百分比
+		宽度: width: 80%;
+-->
+
+<p>
+	<b>x</b>
+	<b style="font-size: 40px;">x</b>
+</p>
+
+<p>
+	<b>z</b>
+	
+	<b style="font-size: 30px;">
+		<b>z</b>
+		<b style="font-size: 3em;">z</b>
+		<b style="font-size: 90px">z</b>
+
+	</b>
+</p>
+
+<p>
+	<b style="color: #00F0F0;">test</b>
+	<b style="color: rgb(255,0,0);">test</b>
+	<b style="color: rgba(255,0,0,.5);">test</b>
+</p>
+
+<p style="width: 80%">1</p>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		span {
+			width: 100px;
+			height: 100px;
+
+			margin: 10px;
+			padding: 10px;
+
+			border: 1px solid red;
+
+			/* 转换元素的类型 块元素 */
+			display: block;
+		}
+
+		div {
+			/*行内元素*/
+			display: inline;
+		}
+
+		p {
+			/* 行内块元素 */
+			display: inline-block;
+
+			width: 100px;
+			height: 100px;
+
+			padding: 10px;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+
+<span>1</span>
+<div style="border: 1px solid red"></div>
+<hr>
+<!--
+	行内块元素
+		1. 可以设置宽高
+		2. 可以在一行内显示
+		3. 可以设置内外边距
+-->
+<p>行内块元素</p>
+<p>行内块元素</p>
+</body>
+</html>

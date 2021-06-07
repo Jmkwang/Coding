@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		/*属性选择器*/
+
+		/* 属性存在则选中 */
+		p[id] {
+			color: red;
+		}
+
+		/* 属性等于某值时选中 */
+		span[title="t"] {
+			color: #00CC00;
+		}
+
+		/* 选择一个属性的值(用空格隔开的字符)存在则选中 */
+		b[title~="a"] {
+			color: #CCAABB;
+		}
+
+		/* 选择某个属性且属性值开头为某个值且使用 - 分隔的属性值, 如果匹配值等于属性值也选中 */
+		div[huang|="biaobiao"] {
+			color: #AADDDD;
+		}
+	</style>
+</head>
+<body>
+<p id="i1">i1</p>
+<p>n1</p>
+
+<hr>
+
+<span title="t">t1</span>
+<span title="t">t2</span>
+<span title="t">t3</span>
+<span title="nt">nt1</span>
+
+<hr>
+
+<b title="t a">t a</b>
+<b title="t a b">t a b</b>
+<b title="t c b">t c b</b>
+<b title="t c">t c</b>
+
+<hr>
+
+<div huang="biaobiao-huang" huang="biaobiao-13">huangbiaobiao</div>
+<div huang="biaobiao">a123</div>
+</body>
+</html>

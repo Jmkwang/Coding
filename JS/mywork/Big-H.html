@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // *     *
+        // *     *
+        // *     *
+        // *******
+        // *     *
+        // *     *
+        // *     *
+        
+        var height = Number(prompt("Height:   (At least 3)"));
+        var length = Number(prompt("Length:   (At least 3)"));
+
+
+        if (height < 3){
+            alert("Too short to print a 'h'.")
+        };
+        if (isNaN(height)){
+            document.write("You are not entering numbers.")
+        };
+
+        if (length < 3){
+            alert("Too narrow to print a 'h'.")
+        };
+        if (isNaN(length)){
+            document.write("You are not entering numbers.")
+        };
+
+        if (height % 2 == 0) { //判断高度并计算位置
+            var midpos = (height - 1) / 2;
+        } else {
+            midpos = height / 2; 
+        }
+
+        for(var count = 1; count <= height; count++){
+            if (count != midpos){
+                document.write("*");    //first *
+                for (var sp = 0; sp < length -2; sp++){   //space
+                document.write("&nbsp;"); 
+                };
+            document.write("*")    //second *
+            document.write("<br>");
+            };
+            if (count == midpos){
+                for (var star = 0; star <= length; star++){
+                    document.write("*");
+                };
+                document.write("<br>");
+            }
+        }
+        
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<!-- 核心选择器 -->
+	<style type="text/css">
+		/* 标签选择器 */
+		span {
+			color: red;
+		}
+
+		/* ID选择器 */
+		/* ID要求唯一, 但是哪怕是重复了css也能选中 */
+		#biaobiao {
+			background-color: #0CC;
+		}
+
+		/* class 选择器 */
+		/* 写css不使用id来查找, 统一使用class */
+		.cp {
+			color: blue;
+		}
+
+		.cp2 {
+			background-color: green;
+		}
+
+		/* 通配符选择器 */
+		/* 选择网页内的所有内容 */
+		* {
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<span>span1</span>
+	<span>span2</span>
+	<p>
+		<span>span3</span>		
+	</p>
+
+	<p id="biaobiao">
+		biaobiao
+	</p>
+	<p id="biaobiao">
+		biaobiao
+	</p>
+
+
+	<p class="cp cp2">class</p>
+	<p class="cp">class</p>
+	<p class="cp cp2">class</p>
+</body>
+</html>

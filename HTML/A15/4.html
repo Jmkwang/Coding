@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.l1 {
+			/*list-style-type: circle;*/
+			list-style-type: decimal;
+		}
+
+		.l2 {
+			list-style-type: circle;
+		}
+
+		.l3 {
+			list-style-position: inside;
+			list-style-position: outside;
+		}
+
+		.l4 {
+			list-style-image: url(./favicon.ico);
+		}
+
+		.l5 {
+			/*list-style: type || position || image;*/
+			/* 没有顺序要求 */
+			/* 可以一次设置多个属性或一个属性 */
+
+			list-style: url(./favicon.ico) circle inside ;
+		}
+
+	</style>
+</head>
+<body>
+	<ul class="l1">
+		<li>ul1</li>
+		<li>ul2</li>
+		<li>ul3</li>
+	</ul>
+
+	<ol class="l2">
+		<li>ol1</li>
+		<li>ol2</li>
+		<li>ol3</li>
+	</ol>
+
+	<ul class="l3">
+		<li>ul1</li>
+		<li>ul2</li>
+		<li>ul3</li>
+	</ul>
+
+	<ol class="l4">
+		<li>ol1</li>
+		<li>ol2</li>
+		<li>ol3</li>
+	</ol>
+
+	<ul class="l5">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+</body>
+</html>

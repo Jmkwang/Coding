@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.container {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 顶部导航 */
+.topNav {
+    background-color: #333333;
+    height: 40px;
+    font-size: 12px;
+    min-width: 1226px;
+}
+
+.topNav .leftTopNavBox {
+    float: left;
+}
+
+.topNav .rightTopNavBox {
+    float: right;
+}
+
+.topNav a {
+    color: #B0B0B0;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: ;
+}
+
+.topNav a:hover {
+    color: white;
+}
+
+.topNav .sep {
+    color: #3F3935;
+    margin: 0 4px;
+}
+
+.topNav .rightTopNavBox .cart {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    margin-left: 20px;
+
+    background-color: #424242;
+}
+
+
+/* 导航条 */
+.header .nav {
+    padding: 20px 0;
+}
+
+.header .nav .nav-logo {
+    background-color: #FF6700;
+    width: 55px;
+    height: 55px;
+}
+
+.header .nav .nav-logo a {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+
+    background: url(../images/mi-logo.png) center;
+}
+
+.header .nav .nav-logo a:hover {
+    background: url(../images/mi-home.png) center;
+}
+
+.header .nav .cate {
+    height: 55px;
+    font-size: 18px;
+    margin-left: 150px;
+}
+
+.header .nav .cate a {
+    display: inline-block;
+    height: 55px;
+    line-height: 55px;
+    color: black;
+    padding: 0 10px;
+    /*border: 1px solid red;*/
+}
+
+.header .nav .cate a:hover {
+    color: #FF6700;
+}

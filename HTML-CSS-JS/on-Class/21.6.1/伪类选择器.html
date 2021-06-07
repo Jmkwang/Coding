@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>结构伪类选择器</title>
+       <style>
+              /* 选择第一个li */
+              ul li:first-child {
+                     color: pink;
+              }
+
+              /* E:last-child 选择最后一个li */
+              ul li:last-child {
+                     color: purple;
+              }
+
+              /* E:nth-child(n) 选择第3个li */
+              ul li:nth-child(3) {
+                     color: red;
+              }
+
+              /* E:nth-last-child(n) 选择倒数第3个（第六个）li */
+              ul li:nth-last-child(3) {
+                     color: burlywood;
+              }
+
+              /* E:nth-of-type(n) 匹配某元素的子元素中第n个出现的E元素  匹配第三个a*/
+              ul li a:nth-of-type(3) {
+                     text-decoration: none;
+                     color: chartreuse;
+              }
+
+              /* E:nth-last-of-type(n)匹配某元素的子元素中倒数第n个出现的E元素  匹配第四个a（倒数第三）*/
+              ul li a:nth-last-of-type(3) {
+                     text-decoration: line-through;
+                     color: rgb(250, 53, 96);
+              }
+       </style>
+</head>
+
+<body>
+       <ul>
+              <li>我是第1个孩子</li>
+              <li>我是第2个孩子</li>
+              <li>我是第3个孩子</li>
+              <li>我是第4个孩子</li>
+              <li>我是第5个孩子</li>
+              <li>我是第6个孩子</li>
+              <li>我是第7个孩子</li>
+              <li>我是第8个孩子</li>
+              <li>
+                     <a href="#">第一个孙子</a>
+                     <a href="#">第二个孙子</a>
+                     <a href="#">第三个孙子</a>
+                     <a href="#">第四个孙子</a>
+                     <a href="#">第五个孙子</a>
+                     <a href="#">第六个孙子</a>
+              </li>
+       </ul>
+</body>
+
+</html>

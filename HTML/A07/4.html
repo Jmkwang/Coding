@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<!--
+		type
+			输入框类型
+		name
+			名称: 在提交输入框的数据给服务端的时候命名用的,因为服务端需要接收有名字的参数
+		value
+			输入框的内容
+
+		checked
+			radio
+			checkbox
+	-->
+	文本
+	<input type="text" name=""><br>
+	密码
+	<input type="password" name="" disabled><br>
+
+	单选
+	<input type="radio" name="sex" checked value="">
+	<input type="radio" name="sex" value="">
+	<input type="radio" name="sex" value="">
+	|
+	<input type="radio" name="age" value="">
+	<input type="radio" name="age" value="">
+	<input type="radio" disabled name="age" checked value="">
+	<br>
+
+	多选框
+	<input type="checkbox" name="like[]" checked value="">
+	<input type="checkbox" name="like[]" checked value="">
+	<input type="checkbox" disabled name="like[]" value="">
+	<br>
+
+	<!-- 隐藏域 -->
+	<input type="hidden" name="" value="123">
+	<br>
+
+	文件框
+	<input type="file" name="">
+	<br>
+
+	无意义按钮
+	<input type="button" name="" value="显示的文字">
+	<br>
+
+	重置和提交
+	<input type="reset" value="reset">
+	<input type="submit" value="submit">
+
+	图片按钮(提交)
+	<input type="image" src="./favicon.ico">
+</body>
+</html>

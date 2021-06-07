@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		/* 包含选择器 */
+		.box1 span {
+			color: red;
+		}
+
+		/* 子选择器 */
+		.box2 > span {
+			color: green;
+		}
+
+		/* 相邻选择器 */
+		.box3 p + div {
+			background-color: blue;
+		}
+
+		/* 兄弟选择器 */
+		.box4 b ~ div {
+			color: pink;
+		}
+	</style>
+</head>
+<body><!-- 
+	<span>span</span> -->
+	<div class="box1">
+		<span>div -> span</span>
+		<p>
+			<span>p -> span</span>
+		</p>
+	</div>
+	
+	<hr>
+
+	<div class="box2">
+		<span>div -> span</span>
+		<p>
+			<span>p -> span</span>
+		</p>
+	</div>
+
+	<hr>
+
+	<div class="box3">
+		<div>1div</div>
+		<p>p</p>
+		<!-- <span>span1</span> -->
+		<div>2div</div>
+	</div>
+
+	<hr>
+
+	<div class="box4">
+		<div>div1</div>
+		<b>b</b>
+		<span>span1</span>
+		<div>div2</div>
+		<span>span1</span>
+		<div>div3</div>
+	</div>
+</body>
+</html>

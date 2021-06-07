@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.head {
+    width: 100%;
+    height: 52px;
+    background-color: #FFFFFF;
+    /* border: 1px solid black; */
+}
+
+.head img {
+    width: 30px;
+    height: 30px;
+}
+
+.head .left {
+    float: left;
+}
+
+.head .left  #home img {
+    height: 32px;
+    border: solid 1px grey;
+    border-radius: 50px;
+    margin-left: 6px;
+    margin-top: 8px;
+    padding: 2px;
+}
+
+.head .left #cart {
+    position: absolute;
+    top: 14px;
+    left: 47px;
+    font-size: 18px;
+}
+
+.head .right {
+    float: right;
+}
+
+.head .right #point {
+    right: 60px;
+    position: absolute;
+    top: 7px;
+    padding: 3px 10px 0px 10px;
+    border: 1px solid grey;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.head .right #circle {
+    right: 10px;
+    position: absolute;
+    top: 7px;
+    padding: 3px 10px 0px 10px;
+    border: 1px solid cadetblue;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: 0px;
+}
+
+.notify {
+    width: 100%;
+    height: 40px;
+    background-color: #FFFFFF;
+}
+
+.notify #text {
+    float: left;
+    color: grey;
+    margin: 10px 0px auto 10px;
+}
+
+.notify #mod {
+    float: right;
+    position: relative;
+    right: 15px;
+    margin: 10px 0px auto 10px;
+}
+
+.empty {
+    background-color: #F7F7F7;
+}
+
+.empty img {
+    width: 100%;
+    height: 60%;
+}
+
+.count {
+    width: 100%;
+    height: 46px;
+    background-color: #FFFFFF;
+    border-top: 2px solid #ECECEC;
+    border-bottom: 2px solid #ECECEC;
+}
+
+.count #pointer {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    float: left;
+    margin: 10px 0px 10px 20px;
+}
+
+.count #selectAll {
+    float: left;
+    margin: 10px 8px;
+}
+
+.count #price {
+    float: left;
+    margin: 10px 8px;
+    color: red;
+    font-size: 17px;
+}
+
+.count #goPay {
+    float: right;
+    padding: 8px 30px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    background-color: #989898;
+    position: relative;
+    right: 10px;
+    top: 4px;
+}
+
+.count #goPay #payText {
+    color: #FCFCFC;
+}
+
+.menu {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.menu #choices {
+
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu img{
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.menu #choices span {
+    font-size: 14px;
+
+}
+
+
+
+

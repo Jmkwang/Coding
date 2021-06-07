@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 对象的引用特性
+        // 对象的复制
+        // 对象的判断
+        // 对象 this
+        // 作业
+
+        // 对象的复制
+        // 数组[]、对象{}
+
+        // 数组复制
+        // 比较简单，可以直接的了，利用系统函数复制
+        // 数组.concat();  复制一个数组
+
+        var arr1 = ['陈鸿B', '王文轩'];
+        var arr2 = arr1.concat(); // 复制数组
+
+        console.log(arr1);
+        console.log(arr2);
+
+        // 改变一下数组的内容看看还会不会被引用
+        arr2[0] = '陈鸿彬'; // 许文彬
+
+        console.log(arr1);
+        console.log(arr2);
+
+
+        // 对象复制
+        // https://www.cnblogs.com/toggle/p/11248425.html
+        // 对象复制没有直接可以用的函数
+        // 可以借用一些其他功能的函数来实现
+        
+        // 函数
+        // Object.assign(目标对象, 源对象。。。)
+
+        var obj1 = {name: 'zhuo'};
+
+        var obj2 = Object.assign({}, obj1); // 复制对象  es6
+        // var obj2 = obj1;
+
+        console.log(obj1);
+        console.log(obj2);
+
+        // 改变一下 obj2 的内容
+        obj2.name = 100;
+
+        console.log(obj1);
+        console.log(obj2);
+
+
+        // 手动复制：使用for in 循环，把拿出来然后放到一个新对象里面
+        // 加点难度：能不能写一个函数同时给数组或对象使用
+    </script>
+</body>
+</html>
