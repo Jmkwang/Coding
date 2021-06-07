@@ -2,10 +2,7 @@
 School work 
 
 School class notes below: 
-unfinished works  working on it now
-Onbehalf personal views only
-code use at ur own risk
-for study only
+Its unfinished works, working on it now, on behalf of personal views only, code use at ur own risk and for study only.
 
 上课笔记链接在下方
 未完成，仍在完善
