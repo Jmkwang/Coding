@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80vh;
+    min-width: 80vw;
+}
+.lunbo .pics{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 60vw;
+    overflow: hidden;
+    transition: .5s transform ease-in-out;
+}
+
+
+.lunbo .pics img{
+    width: 60vw;
+    height: inherit;
+    z-index: 1;
+}
+
+.lunbo .pics #pre{
+    float: left;
+    position: absolute;
+    z-index: 2;
+    left: 1vw;
+    top: 40vh;
+}
+
+.lunbo .pics #nxt{
+    float: right;
+    position: absolute;
+    z-index: 2;
+    right: 1vw;
+    top: 40vh;
+}
+
+.lunbo .pics input #nxt:hover{
+    background-color: orange;
+}
+
+/* .frame input[type="radio"]:nth-of-type(1):checked ~ .slide {
+    transform: translateX(0%);
+} */
+
+.lunbo .pics input #pre:checked ~ .pics{
+    transform: translateX(0%);
+}
+
+.lunbo .pics input #nxt:checked ~ .pics{
+    transform: translateX(-100%);
+}
+

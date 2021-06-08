@@ -5,7 +5,7 @@ body {
     min-height: 100vh;
 }
 
-ul.slides {
+ul.frame {
     position: relative;
     width: 600px;
     height: 280px;
@@ -68,26 +68,26 @@ input[type="radio"] {
     border: 2px solid #fff;
 }
 
-.slides input[type="radio"]:nth-of-type(1):checked ~ .controls-visible label:nth-of-type(1){
+.frame input[type="radio"]:nth-of-type(1):checked ~ .controls-visible label:nth-of-type(1){
     background-color: #333;
 }
 
-.slides input[type="radio"]:nth-of-type(2):checked ~ .controls-visible label:nth-of-type(2){
+.frame input[type="radio"]:nth-of-type(2):checked ~ .controls-visible label:nth-of-type(2){
     background-color: #333;
 }
 
-.slides input[type="radio"]:nth-of-type(3):checked ~ .controls-visible label:nth-of-type(3){
+.frame input[type="radio"]:nth-of-type(3):checked ~ .controls-visible label:nth-of-type(3){
     background-color: #333;
 }
 
-.slides input[type="radio"]:nth-of-type(1):checked ~ .slide {
+.frame input[type="radio"]:nth-of-type(1):checked ~ .slide {
     transform: translateX(0%);
 }
 
-.slides input[type="radio"]:nth-of-type(2):checked ~ .slide {
+.frame input[type="radio"]:nth-of-type(2):checked ~ .slide {
     transform: translateX(-100%);
 }
 
-.slides input[type="radio"]:nth-of-type(3):checked ~ .slide {
+.frame input[type="radio"]:nth-of-type(3):checked ~ .slide {
     transform: translateX(-200%);
 }
