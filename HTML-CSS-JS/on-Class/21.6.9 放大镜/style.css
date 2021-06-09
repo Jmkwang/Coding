@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #060709;
+}
+
+.all{
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+#bg{
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    filter: blur(8px);
+    z-index: 1;
+    /* display: none; */
+}
+
+.all .win{
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+#real{
+    width: 400px;
+    height: 250px;
+    z-index: 2;
+    border: 2px #ffffff52 solid;
+    border-radius: 10px;
+    position: relative;
+}
+
