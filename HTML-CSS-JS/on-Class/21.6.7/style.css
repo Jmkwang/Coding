@@ -3,37 +3,37 @@
     margin: 0;
 }
 
-/* .lunbo{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-} */
-
-.pics{
-    width: 100vw;
-    height: 100vh;
-    animation: 9s loop infinite;
-}
-
-.lunbo .pics img{
-    width: 80vw;
-    height: 50vh;
-    float: left;
-}
-
 .lunbo{
-    width: 80vw;
-    height: 50vh;
+    width: 600px;
+    height: 400px;
     overflow: hidden;
 }
 
-@keyframes loop {
+.pics{
+    width: 3600px;  /*因为有6张图片*/
+    height: 400px;
+    
+}
+
+
+/* 图片设置600x400 */
+.lunbo .pics img{
+    width: 600px;
+    height: 400px;
+    animation: 9s loop infinite;
+    
+}
+
+/* 以下是动画 六张图片9s 
+所以xx%是进度,transform:是移动,translateX是x轴(横向)移动*/
+
+@keyframes loop { 
     0%{}
-    16.6%{transform: translateX(0vw);}
-    33.3%{transform: translateX(-80vw);}
-    49.9%{transform: translateX(-160vw);}
-    84.3%{transform: translateX(-240vw);}
-    100%{transform: translateX(-320vw);}
+    16.6%{transform: translateX(-600px);}
+    33.3%{transform: translateX(-1200px);}
+    49.9%{transform: translateX(-1800px);}
+    84.3%{transform: translateX(-2400px);}
+    100%{transform: translateX(-3000px);}
 }
 
 
