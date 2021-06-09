@@ -4,15 +4,21 @@
     background: #060709;
 }
 
-.all{
-    position: relative;
-    width: 100vw;
-    height: 60vh;
+body{
     display: flex;
     align-items:center;
     justify-content:center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
+}
+
+.effect{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 60vh;
 }
 
 #bg{
@@ -21,20 +27,52 @@
     position: absolute;
     filter: blur(8px);
     z-index: 1;
-    /* display: none; */
 }
 
-.all .win{
-    background-color: #fff;
-    margin: 0 auto;
-}
 
-#real{
+#small{
     width: 400px;
     height: 250px;
     z-index: 2;
     border: 2px #ffffff52 solid;
     border-radius: 10px;
     position: relative;
+    top: 5vh;
 }
+
+#showPos{
+    z-index: 2;
+    color: white;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    top: 4vh;
+}
+
+.mag{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: auto;
+    width: auto;
+    top: -10vh;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.mag #bgImage{
+    width: 600px;
+    height: 375px;   /*要给高度，不然0高度0宽度*/
+    border: 2px #ffffff80 solid;
+    border-radius: 10px;
+    background-image: url("./laptop.jpg");
+    background-size: 1500px 1000px;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
 
