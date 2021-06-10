@@ -38,6 +38,7 @@ body{
     border-radius: 10px;
     position: relative;
     top: 5vh;
+        cursor: move;
 }
 
 #showPos{
@@ -57,7 +58,7 @@ body{
     width: auto;
     top: -10vh;
     z-index: 3;
-    overflow: hidden;
+    border-radius: 10px;
 }
 
 .mag #bgImage{
@@ -65,9 +66,13 @@ body{
     height: 375px;   /*要给高度，不然0高度0宽度*/
     border: 2px #ffffff80 solid;
     border-radius: 10px;
-    background-image: url("./laptop.jpg");
-    background-size: 1500px 1000px;
-    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#magPic {
+    width: 2000px;
+    height: 960px;
+    transform: translate(0px,-0px);
 }
 
 
