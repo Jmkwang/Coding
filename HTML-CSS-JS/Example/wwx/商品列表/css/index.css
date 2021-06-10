@@ -1,0 +1,112 @@
+.search {
+  background-color: #e6e6eb;
+  width: 100%;
+  height: 5rem;
+  position: relative;
+}
+.search .search-input {
+  text-align: center;
+  padding: 0.93rem 0 0.93rem 0;
+}
+.search .search-input input {
+  width: 90%;
+  line-height: 2.5rem;
+  border-radius: 1.5rem;
+  font-size: 1.25rem;
+  border: 1px solid #5b5b60;
+  outline: none;
+}
+.search .search-icon {
+  position: absolute;
+  top: 1.75rem;
+  left: 43%;
+  color: #b5b5b6;
+}
+.content {
+  width: 100%;
+  height: 36rem;
+  background-color: antiquewhite;
+  display: flex;
+}
+.content .left-list {
+  overflow: auto;
+  flex: 2;
+  background-color: #eff5f3;
+}
+.content .left-list li a {
+  text-align: center;
+  display: block;
+  height: 3.125rem;
+  line-height: 3.125rem;
+  text-decoration: none;
+  color: #343232;
+}
+.content .left-list li .active {
+  color: #dd1212;
+  background-color: #ffffff;
+  border-left: 3px solid red;
+}
+.content .right-item {
+  overflow: auto;
+  flex: 6;
+  background-color: #ffffff;
+}
+.content .right-item .right-item-bigimg {
+  width: 90%;
+  height: 6.25rem;
+  margin: 0.93rem;
+}
+.content .right-item .right-item-brand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.content .right-item .right-item-brand .brand-item {
+  width: 5.625rem;
+  height: 6.25rem;
+  background-color: #ffffff;
+  margin-bottom: 0.93rem;
+  text-align: center;
+}
+.content .right-item .right-item-brand .brand-item img {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .search {
+    width: 30%;
+    position: relative;
+  }
+  .content {
+    position: relative;
+  }
+  .content .left-list {
+    position: absolute;
+    background-color: #E6E6EB;
+    top: -5rem;
+    right: 0;
+    width: 70%;
+  }
+  .content .left-list li a {
+    line-height: 4.8rem;
+    height: 4.8rem;
+    float: left;
+    width: 12%;
+    margin: 0 10px 0 10px;
+  }
+  .content .left-list li .active {
+    color: #dd1212;
+    background-color: #ffffff;
+    border-bottom: 3px solid red;
+    border-left: 0px solid red;
+  }
+  .content .right-item .right-item-bigimg {
+    width: 50%;
+    height: 18.75rem;
+    margin: 0 25%;
+  }
+  .content .right-item .right-item-brand .brand-item {
+    width: 9.3rem;
+    height: 10rem;
+  }
+}

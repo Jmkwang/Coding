@@ -38,7 +38,7 @@ body{
     border-radius: 10px;
     position: relative;
     top: 5vh;
-        cursor: move;
+    cursor: move;
 }
 
 #showPos{
@@ -72,7 +72,8 @@ body{
 #magPic {
     width: 2000px;
     height: 1250px;
-    transform: translate(0px,-0px);
+    padding-left: 300px; /*这两个padding是给图片加黑边的*/
+    padding-top: 188px;
 }
 
 

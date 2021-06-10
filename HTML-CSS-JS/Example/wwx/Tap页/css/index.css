@@ -1,0 +1,27 @@
+.tap {
+  width: 60%;
+  background-color: blanchedalmond;
+  margin: 60px auto;
+}
+.tap .tap_title {
+  display: flex;
+}
+.tap .tap_title div {
+  width: 25%;
+  height: 3rem;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tap .tap_title .choose {
+  background-color: cadetblue;
+}
+.tap .tap_page div {
+  width: 100%;
+  height: 300px;
+  display: none;
+}
+.tap .tap_page .show {
+  display: block;
+}
