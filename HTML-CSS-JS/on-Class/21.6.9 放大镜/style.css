@@ -61,7 +61,7 @@ body{
     border-radius: 10px;
 }
 
-.mag #bgImage{
+.mag #magFrame{
     width: 600px;
     height: 375px;   /*要给高度，不然0高度0宽度*/
     border: 2px #ffffff80 solid;
@@ -71,7 +71,7 @@ body{
 
 #magPic {
     width: 2000px;
-    height: 960px;
+    height: 1250px;
     transform: translate(0px,-0px);
 }
 
