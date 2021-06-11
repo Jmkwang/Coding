@@ -22,7 +22,7 @@ window.onload = function(){
         var moveX = 2000 * pyX;
         var moveY = 1250 * pyY;
 
-
+        //获取magPic
         var magPic = document.getElementById("magPic");
 
         //以下同理等于→ transform: translate( -XXpx; -YYpx);
@@ -34,7 +34,7 @@ window.onload = function(){
         var showPos = document.getElementById("showPos");
         showPos.innerHTML = showX + "," + showY;
 
-        //检查结果用
+        //检查输出结果用
         console.log(mouseX, mouseY, bodyW, bodyH);
         console.log(pyX,pyY,moveX,moveY);
         console.log("translate(-" + moveX + "px, -" + moveY + "px)");
