@@ -4,40 +4,27 @@
 }
 
 .tab{
-    
     width: 60vw;
     height: 40vh;
     border: blueviolet 2px solid;
     border-radius: 2%;
-    margin: 0 auto;
-    top: 6vh;
+    margin: 6vh auto;
+    
 }
 
-#title{
+.title{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: inherit;
+    align-items: center;
+    text-align: center;
 }
 
-#cate{ 
-    position: absolute;
-    width: inherit;
-    height: inherit;
+#cate{
+    position: relative;
+    width: 25%;
+    height: ;
 }
-
-#cate:nth-of-type(2){
-    left: 25%;
-}
-
-#cate:nth-of-type(3){
-    left: 50%;
-}
-
-#cate:nth-of-type(4){
-    left: 75%;
-}
-
 
 .page{
     top:50px;
