@@ -5,7 +5,7 @@
 
 .tab{
     width: 60vw;
-    height: 40vh;
+    height: 45vh;
     border: blueviolet 2px solid;
     border-radius: 2%;
     margin: 6vh auto;
@@ -18,14 +18,54 @@
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    height: 4vh;
 }
 
-#cate{
+.cate{
     position: relative;
     width: 25%;
-    height: ;
+
 }
 
-.page{
-    top:50px;
+.cate:nth-child(1):hover{
+    border-bottom: 3px solid red ;
+    background-color: darkgray;
 }
+
+.cate:nth-child(2):hover{
+    border-bottom: 3px solid red ;
+    background-color: darkgray;
+}
+
+.cate:nth-child(3):hover{
+    border-bottom: 3px solid red ;
+    background-color: darkgray;
+}
+
+.cate:nth-child(4):hover{
+    border-bottom: 3px solid red ;
+    background-color: darkgray;
+}
+
+
+page{
+    height: 40vh;
+    width: inherit;
+}
+
+.content{
+    width: 60vw;
+    height: inherit;
+    position: absolute;
+    display: none;
+    background-color: darkgray;
+}
+
+
+
+
+/* #content:nth-child(n){
+    display: block;
+} */
+
+
