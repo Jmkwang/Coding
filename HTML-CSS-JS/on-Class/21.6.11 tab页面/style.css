@@ -24,13 +24,18 @@
 .cate{
     position: relative;
     width: 25%;
-
+    cursor: pointer;
 }
 
 .cate:nth-child(1):hover{
     border-bottom: 3px solid red ;
     background-color: darkgray;
 }
+
+/* .cate:nth-child(1):target{
+    border-bottom: 3px solid orange ;
+    background-color: olive;
+} */
 
 .cate:nth-child(2):hover{
     border-bottom: 3px solid red ;
@@ -48,7 +53,8 @@
 }
 
 
-page{
+
+.page{
     height: 40vh;
     width: inherit;
 }
