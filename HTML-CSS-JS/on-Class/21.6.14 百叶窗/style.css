@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* tab-cate-content */
+
+.tab{
+    width: 55vw;
+    height: 60vh;
+    margin: 5vh auto;
+    border: blueviolet solid 5px;
+    border-radius: 8px;
+}
+
