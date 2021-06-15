@@ -27,11 +27,6 @@ window.onload = function () {
     for(var i = 0; i < tap_title.length; i++){
         tap_title[i].num = i;
     }
-    
-    
-    
-
-
 
 
 
