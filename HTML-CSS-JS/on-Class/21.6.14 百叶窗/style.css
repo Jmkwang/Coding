@@ -11,5 +11,21 @@
     margin: 5vh auto;
     border: blueviolet solid 5px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
+.cate{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px orange solid;
+    border-radius: 8px;
+    height: 8vh;
+}
+
+.content{
+    display: none;
+    height: 18vh;
+}
