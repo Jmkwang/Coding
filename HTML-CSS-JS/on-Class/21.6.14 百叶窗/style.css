@@ -3,29 +3,37 @@
     margin: 0;
 }
 
-/* tab-cate-content */
+/* tab-title~content */
 
 .tab{
-    width: 55vw;
-    height: 60vh;
+    width: 50vw;
+    height: 65vh;
     margin: 5vh auto;
     border: blueviolet solid 5px;
     border-radius: 8px;
     cursor: pointer;
+    overflow: hidden;
 }
 
-.cate{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 2px orange solid;
-    border-radius: 8px;
-    height: 8vh;
+
+.title{
+    height: 10vh;
+    width: 55vw;
+    border-bottom:2px #0ac0f8 solid ;
+    border-radius: 13px;
+    position: relative;
+    text-align: center;
 }
 
 .content{
-    display: none;
     height: 18vh;
+    width: 55vw;
+    text-align: center;
+    display: none;
+    border-bottom: 2px gold solid;
+    border-radius: 8px;
 }
+
+/* .tab .content:nth-of-type(8){
+    display: none;
+} */
