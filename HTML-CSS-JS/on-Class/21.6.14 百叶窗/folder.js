@@ -1,9 +1,8 @@
 window.onload = function(){
 
     /* tab-title~content */
-    var tab = document.getElementsByClassName("tab");
     var title = document.getElementsByClassName("title");
-    var content = document.getElementsByClassName("content");
+
 
     // console.log(tab);
     // console.log(title);
@@ -29,8 +28,9 @@ window.onload = function(){
         title[i].num = i;
     }
 
-
+    var cache =0;
     function dropBack(num){
+
         //drop
         nth = (num + 1) * 2;
         var cttDrop = document.querySelector(".content:nth-of-type(" + nth + ")");
@@ -44,6 +44,6 @@ window.onload = function(){
                 var hide = document.querySelector(".content:nth-of-type(" + hidth + ")");
                 hide.style.display= "none";          
             }
-        }  
+        }
     }
 }

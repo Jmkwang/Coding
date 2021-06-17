@@ -18,7 +18,7 @@
 
 .title{
     height: 10vh;
-    width: 55vw;
+    width: 50vw;
     border-bottom:2px #0ac0f8 solid ;
     border-radius: 13px;
     position: relative;
@@ -27,7 +27,7 @@
 
 .content{
     height: 18vh;
-    width: 55vw;
+    width: 50vw;
     text-align: center;
     display: none;
     border-bottom: 2px gold solid;
