@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.frame{
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg img{
+    width: 80vw;
+    height: 40vw;
+    margin: 4vh 10vw;
+    border: 2px navy solid;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+}
+.danmu span{
+    z-index: 2;
+    position: absolute;
+    top: 30px;
+    transform: translateX(35px);
+}
