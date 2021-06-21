@@ -14,12 +14,21 @@
     margin: 4vh 10vw;
     border: 2px navy solid;
     border-radius: 10px;
-    z-index: 1;
     position: relative;
 }
-.danmu span{
-    z-index: 2;
-    position: absolute;
-    top: 30px;
-    transform: translateX(35px);
+.danmu{
+    width: 30vw;
+    position: relative;
+    margin: 0 35vw;
+}
+
+.danmu input{
+    width: 22vw;
+    border-radius: 8px;
+}
+
+.danmu button{
+    width: 7vw;
+    cursor: pointer;
+    border-radius: 8px;
 }
