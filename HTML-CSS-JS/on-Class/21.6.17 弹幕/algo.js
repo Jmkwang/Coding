@@ -1,9 +1,13 @@
 window.onload = function(){
-    const MAX_DM_COUNT = 6;
-    const CHANNEL_COUNT = 10;
+    //获取输入，加入数组
+    //从池中取出弹幕
+    //
+    //清空输入框
+    // const MAX_DM_COUNT = 6;
+    // const CHANNEL_COUNT = 10;
 
     let domPool = [];
-    let danmuPool = [
+    var danmuPool = [
     '前方大量弹幕来袭，请做好准备！', '2333333', '2333333', '2333333', '2333333', '2333333', 
     '浔阳江头夜送客， 枫叶荻花秋瑟瑟',  '2333333', '2333333', '2333333', '2333333', '2333333', '2333333',
     '主人下马客在船， 举酒欲饮无管弦。', '醉不成欢惨将别， 别时茫茫江浸月', '忽闻水上琵琶声， 主人忘归客不发。', 
@@ -23,12 +27,24 @@ window.onload = function(){
     '座中泣下谁最多？ 江州司马青衫湿。'
     ];
 
-    var send = document.querySelectorAll("button");
-    var text = document.querySelectorAll("input");
-    console.log(send,text,"1");
+    var send = document.querySelectorAll("button")[0];
+    var text = document.querySelectorAll("input")[0];
 
     send.onclick = function(){
-        // console.log(send,text);
+
+        if(text.value == "" || text.value == " "){
+            return;
+        }else{
+            danmuPool.push(text.value);
+            console.log(danmuPool);
+        }
+
+        var pl = danmuPool.length;
+        // console.log(pl);
+
+        for(count = 0; count < pl; count++){
+            console.log(danmuPool[count]);
+        }
     }
 
 
