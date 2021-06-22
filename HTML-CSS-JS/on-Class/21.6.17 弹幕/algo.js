@@ -44,6 +44,20 @@ window.onload = function(){
 
         for(count = 0; count < pl; count++){
             console.log(danmuPool[count]);
+            textShoot = danmuPool[count];
+
+            function makeSpan(){
+                var span = document.createElement('span');
+                span.appendChild(textShoot);
+                console.log(span);
+            }
+            makeSpan();
+
+            function shoot(textShoot){
+                setTimeout(() => {
+
+                }, 800);
+            }
         }
     }
 
