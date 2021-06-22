@@ -31,4 +31,5 @@
     width: 7vw;
     cursor: pointer;
     border-radius: 8px;
+    float: right;
 }
