@@ -27,6 +27,7 @@ window.onload = function(){
     '座中泣下谁最多？ 江州司马青衫湿。'
     ];
 
+    var frame = document.querySelectorAll("frame")[0];
     var send = document.querySelectorAll("button")[0];
     var text = document.querySelectorAll("input")[0];
 
