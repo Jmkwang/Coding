@@ -49,7 +49,7 @@ window.onload = function(){
 
             function makeSpan(){
                 var span = document.createElement('span');
-                span.appendChild(textShoot);
+                span.setAttribute                
                 console.log(span);
             }
             makeSpan();
