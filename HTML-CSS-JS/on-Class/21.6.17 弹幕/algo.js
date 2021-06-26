@@ -48,8 +48,8 @@ window.onload = function(){
             textShoot = danmuPool[count];
 
             function makeSpan(){
-                var span = document.createElement('span');
-                span.setAttribute                
+                var span = document.span;
+                 
                 console.log(span);
             }
             makeSpan();

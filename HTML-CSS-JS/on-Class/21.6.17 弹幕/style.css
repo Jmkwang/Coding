@@ -4,25 +4,26 @@
 }
 
 .coverL{
-    width: 10vw;
+    width: 9vw;
     height: 60vw;
     float: left;
     z-index: 99;
-    color: white;
+    background-color: white;
+    position: relative;
 }
 
 .coverR{
-    width: 10vw;
+    width: 9vw;
     height: 60vw;
     float: right;
     z-index: 99;
-    color: white;
+    background-color: white;
+    position: relative;
 }
 
 /* .frame{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    width: 80vw;
+    height: 45vh;
 } */
 
 .bg img{
@@ -31,13 +32,13 @@
     margin-top: 4vh;
     border: 2px navy solid;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
 }
 .danmu{
     width: 30vw;
     height: 4vh;
-    position: relative;
-    margin: 0 35vw;
+    position: absolute;
+    margin: 44vw 35vw;
 }
 
 .danmu input{
@@ -66,6 +67,7 @@ span{
     line-height: 25px;
     padding: 0 10px 0 10px;
     animation: 10s loop infinite;
+    color: red;
 }
 
 
