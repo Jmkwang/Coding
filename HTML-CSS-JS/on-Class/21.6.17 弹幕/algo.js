@@ -3,10 +3,9 @@ window.onload = function(){
     //从池中取出弹幕
     //
     //清空输入框
-    // const MAX_DM_COUNT = 6;
-    // const CHANNEL_COUNT = 10;
+    const MAX_DM_COUNT = 6;
+    const CHANNEL_COUNT = 10;
 
-    let domPool = [];
     var danmuPool = [
     '前方大量弹幕来袭，请做好准备！', '2333333', '2333333', '2333333', '2333333', '2333333', 
     '浔阳江头夜送客， 枫叶荻花秋瑟瑟',  '2333333', '2333333', '2333333', '2333333', '2333333', '2333333',
@@ -30,6 +29,7 @@ window.onload = function(){
     var frame = document.querySelectorAll("frame")[0];
     var send = document.querySelectorAll("button")[0];
     var text = document.querySelectorAll("input")[0];
+    var inner_text = document.getElementById("inner_Text");
 
     send.onclick = function(){
 
@@ -40,25 +40,73 @@ window.onload = function(){
             console.log(danmuPool);
         }
 
-        var pl = danmuPool.length;
-        // console.log(pl);
+        var pool_length = danmuPool.length;
 
-        for(count = 0; count < pl; count++){
-            console.log(danmuPool[count]);
+
+        function init() {
+            let wrapper = document.getElementById('frame')
+            // 先new一些span 重复利用这些DOM
+            for (let j = 0; j < CHANNEL_COUNT; j++) {
+              let doms = [];
+              for (let i = 0; i < MAX_DM_COUNT; i++) {
+                // 要全部放进wrapper
+                let dom = document.createElement('span');
+                wrapper.appendChild(dom);
+                // 初始化dom的位置 通过设置className
+                dom.className = 'right';
+                // DOM的通道是固定的 所以设置好top就不需要再改变了
+                dom.style.top = j * 20 + 'px';
+                // 放入改通道的DOM池
+                doms.push(dom);
+                // 每次到transition结束的时候 就是弹幕划出屏幕了 将DOM位置重置 再放回DOM池
+                dom.addEventListener('transitionend', () => {
+                  dom.className = 'right';
+                  // dom.style.transition = null;
+                  // dom.style.left = null;
+                  dom.style.transform = null;
+          
+                  domPool[j].push(dom);
+                });
+              }
+              domPool.push(doms);
+            }
+            // hasPosition 标记每个通道目前是否有位置
+            for (let i = 0; i < CHANNEL_COUNT; i++) {
+              hasPosition[i] = true;
+            }
+          }
+
+        for(count = 0; count < pool_length; count++){
             textShoot = danmuPool[count];
+            console.log(count);
 
-            function makeSpan(){
-                var span = document.span;
-                 
-                console.log(span);
+            function shootDm(){
+                
+                inner_text.appendChild(document.createTextNode(textShoot));
+                    
+
+                // frame.appendChild(inner_text);
+                // "<span>" + textShoot + "</span>";
+                // inner_text.innerText = textShoot;
+
+
+                
             }
-            makeSpan();
+            shootDm();
 
-            function shoot(textShoot){
-                setTimeout(() => {
 
-                }, 800);
-            }
+
+            
+
+
+
+
+
+
+
+
+            
+
         }
     }
 
