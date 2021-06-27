@@ -43,69 +43,45 @@ window.onload = function(){
         var pool_length = danmuPool.length;
 
 
-        function init() {
-            let wrapper = document.getElementById('frame')
-            // 先new一些span 重复利用这些DOM
-            for (let j = 0; j < CHANNEL_COUNT; j++) {
-              let doms = [];
-              for (let i = 0; i < MAX_DM_COUNT; i++) {
-                // 要全部放进wrapper
-                let dom = document.createElement('span');
-                wrapper.appendChild(dom);
-                // 初始化dom的位置 通过设置className
-                dom.className = 'right';
-                // DOM的通道是固定的 所以设置好top就不需要再改变了
-                dom.style.top = j * 20 + 'px';
-                // 放入改通道的DOM池
-                doms.push(dom);
-                // 每次到transition结束的时候 就是弹幕划出屏幕了 将DOM位置重置 再放回DOM池
-                dom.addEventListener('transitionend', () => {
-                  dom.className = 'right';
-                  // dom.style.transition = null;
-                  // dom.style.left = null;
-                  dom.style.transform = null;
-          
-                  domPool[j].push(dom);
-                });
-              }
-              domPool.push(doms);
-            }
-            // hasPosition 标记每个通道目前是否有位置
-            for (let i = 0; i < CHANNEL_COUNT; i++) {
-              hasPosition[i] = true;
-            }
-          }
-
         for(count = 0; count < pool_length; count++){
             textShoot = danmuPool[count];
             console.log(count);
 
-            function shootDm(){
-                
-                inner_text.appendChild(document.createTextNode(textShoot));
-                    
-
-                // frame.appendChild(inner_text);
-                // "<span>" + textShoot + "</span>";
-                // inner_text.innerText = textShoot;
-
-
-                
+            function delay(time) {
+              timeout = window.setTimeout(delayAlert(), time);
             }
-            shootDm();
 
+            function delayAlert() {
+              alert('dan mu is full!');
+            }
 
+            if(count == CHANNEL_COUNT){
+              delay(2000);
+              shoot();
+            }else{
+              shoot();
+            }
 
-            
+            function shoot(){
+              var span = document.createElement("span");
+              var span_text = document.createTextNode(textShoot);
+              span.appendChild(span_text);
+              inner_text.appendChild(span);
+              span.style.top = Math.round(Math.random() * 200) + 'px';
+              span.style.right = -span.offsetWidth + 'px';
+      
+      
+              // 将弹幕从右到左移动
+              setTimeout(() => {
+                  span.style.right = 800 + 'px';
+      
+              }, 50);
+      
+              // 清除输入框里面的东西
+              text.value = ""
+            }
 
-
-
-
-
-
-
-
-            
+            // shoot();
 
         }
     }

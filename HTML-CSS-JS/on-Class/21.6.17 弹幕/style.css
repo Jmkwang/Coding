@@ -34,11 +34,12 @@
     border-radius: 10px;
     position: absolute;
 }
+
 .danmu{
     width: 30vw;
     height: 4vh;
     position: absolute;
-    margin: 44vw 35vw;
+    margin: 45vw 35vw 0 35vw;
 }
 
 .danmu input{
@@ -54,14 +55,14 @@
     font-size: 2vh;
 }
 
-span{
+/* span{
     width: 60vw;
     height: 1.5vw;
     z-index: 2;
     position: absolute;
     top: 4vh;
     /* border: 2px solid rgb(199, 192, 192); */
-    border-radius: 10px;
+    /* border-radius: 10px;
     display: block;
     height: 25px;
     line-height: 25px;
@@ -69,10 +70,10 @@ span{
     animation: 10s loop infinite;
     color: red;
     font-weight: bold;
-}
+} */
 
 
-@keyframes loop { 
+/* @keyframes loop { 
     0%{transform: translateX(90vw);}
     /* 10%{transform: translateX(90vw);}
     20%{transform: translateX(80vw);}
@@ -83,5 +84,5 @@ span{
     70%{transform: translateX(30vw);}
     80%{transform: translateX(20vw);}
     90%{transform: translateX(10vw);} */
-    100%{transform: translateX(-50vw);}
-}
+    /* 100%{transform: translateX(-50vw);}
+} */ 
