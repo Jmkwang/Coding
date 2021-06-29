@@ -55,9 +55,11 @@ window.onload = function(){
       var span_text = document.createTextNode(theDm);
       span.appendChild(span_text);
       inner_text.appendChild(span);
-      // span.style.top = Math.round(Math.random() * 300) + 'px';
-      span.style.left = "1000px";
-     
+      span.style.top = Math.round(Math.random() * 300) + 'px';
+      span.style.display = "block";
+      // setTimeout(() => {
+        
+      // }, 50);
 
       // function animate(){
       //   var addleft = setInterval(() => {
