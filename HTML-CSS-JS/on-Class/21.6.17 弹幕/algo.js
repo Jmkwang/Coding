@@ -3,8 +3,6 @@ window.onload = function(){
     //从池中取出弹幕
     //
     //清空输入框
-    const MAX_DM_COUNT = 6;
-    const CHANNEL_COUNT = 10;
 
     var danmuPool = [
     '前方大量弹幕来袭，请做好准备！', '2333333', '2333333', '2333333', '2333333', '2333333', 
@@ -26,65 +24,65 @@ window.onload = function(){
     '座中泣下谁最多？ 江州司马青衫湿。'
     ];
 
+    var pool_length = danmuPool.length;
+    var theDm;
+
     var frame = document.querySelectorAll("frame")[0];
     var send = document.querySelectorAll("button")[0];
     var text = document.querySelectorAll("input")[0];
     var inner_text = document.getElementById("inner_Text");
 
-    send.onclick = function(){
 
-        if(text.value == "" || text.value == " "){
-            return;
-        }else{
-            danmuPool.push(text.value);
-            console.log(danmuPool);
-        }
-
-        var pool_length = danmuPool.length;
-
-
-        for(count = 0; count < pool_length; count++){
-            textShoot = danmuPool[count];
-            console.log(count);
-
-            function delay(time) {
-              timeout = window.setTimeout(delayAlert(), time);
-            }
-
-            function delayAlert() {
-              alert('dan mu is full!');
-            }
-
-            if(count == CHANNEL_COUNT){
-              delay(2000);
-              shoot();
-            }else{
-              shoot();
-            }
-
-            function shoot(){
-              var span = document.createElement("span");
-              var span_text = document.createTextNode(textShoot);
-              span.appendChild(span_text);
-              inner_text.appendChild(span);
-              span.style.top = Math.round(Math.random() * 200) + 'px';
-              span.style.right = -span.offsetWidth + 'px';
-      
-      
-              // 将弹幕从右到左移动
-              setTimeout(() => {
-                  span.style.right = 800 + 'px';
-      
-              }, 50);
-      
-              // 清除输入框里面的东西
-              text.value = ""
-            }
-
-            // shoot();
-
-        }
+    function input_action(){
+      if(text.value == "" || text.value == " "){
+        return;
+      }else{
+        danmuPool.push(text.value);
+      }
     }
+
+    function get_dm(){
+      theDm = danmuPool[0];
+      danmuPool.splice(0,1);
+      timeout = window.setTimeout(500);
+      console.log("get_dm");
+      console.log(danmuPool);
+    }
+
+
+    function shoot(){
+      var span = document.createElement("span");
+      var span_text = document.createTextNode(theDm);
+      span.appendChild(span_text);
+      inner_text.appendChild(span);
+      // span.style.top = Math.round(Math.random() * 300) + 'px';
+      span.style.left = "1000px";
+     
+
+      // function animate(){
+      //   var addleft = setInterval(() => {
+      //     for(var addpx = 0; addpx < 1000; addpx++){
+      //       span.style.right = -(span.offsetWidth + addpx) + 'px';
+      //     } 
+      //   }, 50);
+      // }
+      // animate();
+
+
+    }
+
+    function clean_input(){
+      text.value = "";
+      console.log("clean");
+    }
+
+    send.onclick = function(){
+      input_action();
+      get_dm();
+      shoot();
+      clean_input();
+    }
+    
 
 
 } 

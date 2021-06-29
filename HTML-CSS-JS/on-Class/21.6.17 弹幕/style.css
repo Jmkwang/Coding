@@ -55,14 +55,14 @@
     font-size: 2vh;
 }
 
-/* span{
+span{
     width: 60vw;
     height: 1.5vw;
     z-index: 2;
     position: absolute;
     top: 4vh;
-    /* border: 2px solid rgb(199, 192, 192); */
-    /* border-radius: 10px;
+    border: 2px solid rgb(199, 192, 192);
+    border-radius: 10px;
     display: block;
     height: 25px;
     line-height: 25px;
@@ -70,7 +70,8 @@
     animation: 10s loop infinite;
     color: red;
     font-weight: bold;
-} */
+    transition: left 5s;
+}
 
 
 /* @keyframes loop { 
