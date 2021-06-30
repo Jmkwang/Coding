@@ -51,12 +51,12 @@ window.onload = function(){
 
 
     function shoot(){
-      var span = document.createElement("span");
-      var span_text = document.createTextNode(theDm);
-      span.appendChild(span_text);
-      inner_text.appendChild(span);
-      span.style.top = Math.round(Math.random() * 300) + 'px';
-      span.style.display = "block";
+      // var span = document.createElement("span");
+      // var span_text = document.createTextNode(theDm);
+      // span.appendChild(span_text);
+      // inner_text.appendChild(span);
+      // span.style.top = Math.round(Math.random() * 300) + 'px';
+      // span.style.display = "block";
       // setTimeout(() => {
         
       // }, 50);
