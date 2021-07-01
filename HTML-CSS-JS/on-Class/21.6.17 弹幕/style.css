@@ -44,11 +44,13 @@
 
 .danmu input{
     width: 22vw;
+    height: 3vh;
     border-radius: 8px;
 }
 
 .danmu button{
     width: 7vw;
+    height: 4vh;
     cursor: pointer;
     border-radius: 8px;
     float: right;
