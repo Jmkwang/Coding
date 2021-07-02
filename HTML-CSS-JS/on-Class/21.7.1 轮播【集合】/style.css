@@ -14,7 +14,7 @@
 .by_Click{
     width: 100vw;
     height: 30vw;
-    position: absolute;
+    position: relative;
 }
 
 .by_Click .margin_left{
@@ -28,37 +28,43 @@
     width: 20vw;
     height: 30vw;
     float: right;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .by_Click .frame{
-    display: inline-block;
+    width: 60vw;
+    height: 30vw;
 }
 
 .click_left{
     position: absolute;
     z-index: 2;
     color: red;
-    width: 5vw;
+    width: 6vw;
     height: 30vw;
     left: 20vw;
     line-height: 30vw;
     vertical-align: middle;
     text-align: center;
     font-size: xx-large;
+    cursor: pointer;
 }
 
 .click_right{
     position: absolute;
     z-index: 2;
     color: red;
-    width: 5vw;
+    width: 6vw;
     height: 30vw;
     right: 20vw;
     line-height: 30vw;
     vertical-align: middle;
     text-align: center;
     font-size: xx-large;
+    top: 0;
+    cursor: pointer;
 }
 
 .by_Click img{
