@@ -73,3 +73,69 @@
     height: 30vw;
     z-index: 1;
 }
+
+
+/* above all*/
+.above{
+    width: 100vw;
+    height: 30vw;
+    position: relative;
+    top: 1vw;
+}
+
+.above .margin_left{
+    width: 20vw;
+    height: 30vw;
+    float: left;
+    position: relative;
+}
+
+.above .margin_right{
+    width: 20vw;
+    height: 30vw;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.above .frame{
+    width: 60vw;
+    height: 30vw;
+}
+
+.all_left{
+    position: absolute;
+    z-index: 2;
+    color: red;
+    width: 6vw;
+    height: 30vw;
+    left: 20vw;
+    line-height: 30vw;
+    vertical-align: middle;
+    text-align: center;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.all_right{
+    position: absolute;
+    z-index: 2;
+    color: red;
+    width: 6vw;
+    height: 30vw;
+    right: 20vw;
+    line-height: 30vw;
+    vertical-align: middle;
+    text-align: center;
+    font-size: xx-large;
+    top: 0;
+    cursor: pointer;
+}
+
+.above img{
+    position: relative;
+    width: 60vw;
+    height: 30vw;
+    z-index: 1;
+}
