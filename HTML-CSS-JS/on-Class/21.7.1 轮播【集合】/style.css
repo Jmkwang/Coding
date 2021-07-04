@@ -4,6 +4,10 @@
 }
 
 /* by_Time */
+.by_Time{
+    margin-bottom: 2vw;
+}
+
 .by_Time img{
     width: 60vw;
     height: 30vw;
@@ -15,6 +19,7 @@
     width: 100vw;
     height: 30vw;
     position: relative;
+    margin-bottom: 2vw;
 }
 
 .by_Click .margin_left{
@@ -80,7 +85,7 @@
     width: 100vw;
     height: 30vw;
     position: relative;
-    top: 1vw;
+    margin-bottom: 2vw;
 }
 
 .above .margin_left{
@@ -138,4 +143,47 @@
     width: 60vw;
     height: 30vw;
     z-index: 1;
+}
+
+
+/* select */
+.select{
+    width: 100vw;
+    height: 30vw;
+    position: relative;
+    top: 2vw;
+}
+
+.select .margin_left{
+    width: 20vw;
+    height: 30vw;
+    float: left;
+    position: relative;
+}
+
+.select .margin_right{
+    width: 20vw;
+    height: 30vw;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.select .frame{
+    width: 60vw;
+    height: 30vw;
+}
+
+.select img{
+    position: relative;
+    width: 60vw;
+    height: 30vw;
+    z-index: 1;
+}
+
+.select .points{
+    width: 20vw;
+    display: flex;
+    align-items: center;
 }
