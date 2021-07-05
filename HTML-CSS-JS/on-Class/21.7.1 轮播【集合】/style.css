@@ -41,6 +41,7 @@
 .by_Click .frame{
     width: 60vw;
     height: 30vw;
+    margin-bottom: 2vw;
 }
 
 .click_left{
@@ -104,9 +105,10 @@
     right: 0;
 }
 
-.above .frame{
+.all .frame{
     width: 60vw;
     height: 30vw;
+    margin-bottom: 2vw;
 }
 
 .all_left{
@@ -151,7 +153,6 @@
     width: 100vw;
     height: 30vw;
     position: relative;
-    top: 2vw;
 }
 
 .select .margin_left{
@@ -159,6 +160,7 @@
     height: 30vw;
     float: left;
     position: relative;
+    z-index: 99;
 }
 
 .select .margin_right{
@@ -168,22 +170,38 @@
     position: absolute;
     top: 0;
     right: 0;
-}
+    z-index: 99;
+    background-color: white;
+} 
 
-.select .frame{
+.select_frame{
     width: 60vw;
     height: 30vw;
+    overflow: hidden;
+    position: relative;
+    padding-left: 20vw;
+}
+
+.pics{
+    left: 0vw;
+    width: 250vw;
+    transition: linear left 2.5s;
+    position: absolute;
+
 }
 
 .select img{
-    position: relative;
+    /* position: absolute; */
     width: 60vw;
     height: 30vw;
     z-index: 1;
+    
 }
 
 .select .points{
     width: 20vw;
-    display: flex;
-    align-items: center;
+    margin-top: 27vw;
+    margin-left: 25vw;
+    z-index: 2;
+    position: absolute;
 }

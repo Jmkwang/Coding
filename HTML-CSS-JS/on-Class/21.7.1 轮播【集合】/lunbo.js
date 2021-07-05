@@ -106,18 +106,25 @@ window.onload=function(){
     all();
     
 
+    // select
+    function select(){
+        var points = document.getElementsByClassName('points')[0].children;
+        var pics = document.getElementsByClassName('pics')[0];
+        points[0].onclick = function(){
+            pics.style.left = "0vw"
+        }
+        points[1].onclick = function(){
+            pics.style.left = "-60vw"
+        }
+        points[2].onclick = function(){
+            pics.style.left = "-120vw"
+        }
+        points[3].onclick = function(){
+            pics.style.left = "-180vw"
+        }
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+    select();
 
 
 

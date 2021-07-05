@@ -91,6 +91,4 @@ window.onload = function(){
       clean_input();
     }
     
-
-
 } 
