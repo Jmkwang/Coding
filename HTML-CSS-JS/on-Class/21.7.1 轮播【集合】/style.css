@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* by_Time */
+.by_Time{
+    margin-bottom: 2vw;
+}
+
+.by_Time img{
+    width: 60vw;
+    height: 30vw;
+    margin-left: 20vw;
+}
+
+/* by_Click */
+.by_Click{
+    width: 100vw;
+    height: 30vw;
+    position: relative;
+    margin-bottom: 2vw;
+}
+
+.by_Click .margin_left{
+    width: 20vw;
+    height: 30vw;
+    float: left;
+    position: relative;
+}
+
+.by_Click .margin_right{
+    width: 20vw;
+    height: 30vw;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.by_Click .frame{
+    width: 60vw;
+    height: 30vw;
+    margin-bottom: 2vw;
+}
+
+.click_left{
+    position: absolute;
+    z-index: 2;
+    color: red;
+    width: 6vw;
+    height: 30vw;
+    left: 20vw;
+    line-height: 30vw;
+    vertical-align: middle;
+    text-align: center;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.click_right{
+    position: absolute;
+    z-index: 2;
+    color: red;
+    width: 6vw;
+    height: 30vw;
+    right: 20vw;
+    line-height: 30vw;
+    vertical-align: middle;
+    text-align: center;
+    font-size: xx-large;
+    top: 0;
+    cursor: pointer;
+}
+
+.by_Click img{
+    position: relative;
+    width: 60vw;
+    height: 30vw;
+    z-index: 1;
+}
+
+
+/* above all*/
+.above{
+    width: 100vw;
+    height: 30vw;
+    position: relative;
+    margin-bottom: 2vw;
+}
+
+.above .margin_left{
+    width: 20vw;
+    height: 30vw;
+    float: left;
+    position: relative;
+}
+
+.above .margin_right{
+    width: 20vw;
+    height: 30vw;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.all .frame{
+    width: 60vw;
+    height: 30vw;
+    margin-bottom: 2vw;
+}
+
+.all_left{
+    position: absolute;
+    z-index: 2;
+    color: red;
+    width: 6vw;
+    height: 30vw;
+    left: 20vw;
+    line-height: 30vw;
+    vertical-align: middle;
+    text-align: center;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.all_right{
+    position: absolute;
+    z-index: 2;
+    color: red;
+    width: 6vw;
+    height: 30vw;
+    right: 20vw;
+    line-height: 30vw;
+    vertical-align: middle;
+    text-align: center;
+    font-size: xx-large;
+    top: 0;
+    cursor: pointer;
+}
+
+.above img{
+    position: relative;
+    width: 60vw;
+    height: 30vw;
+    z-index: 1;
+}
+
+
+/* select */
+.select{
+    width: 100vw;
+    height: 30vw;
+    position: relative;
+}
+
+.select .margin_left{
+    width: 20vw;
+    height: 30vw;
+    float: left;
+    position: relative;
+    z-index: 99;
+}
+
+.select .margin_right{
+    width: 20vw;
+    height: 30vw;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    background-color: white;
+} 
+
+.select_frame{
+    width: 60vw;
+    height: 30vw;
+    overflow: hidden;
+    position: relative;
+    padding-left: 20vw;
+}
+
+.pics{
+    left: 0vw;
+    width: 250vw;
+    transition: linear left 2.5s;
+    position: absolute;
+
+}
+
+.select img{
+    /* position: absolute; */
+    width: 60vw;
+    height: 30vw;
+    z-index: 1;
+    
+}
+
+.select .points{
+    width: 20vw;
+    margin-top: 27vw;
+    margin-left: 25vw;
+    z-index: 2;
+    position: absolute;
+}

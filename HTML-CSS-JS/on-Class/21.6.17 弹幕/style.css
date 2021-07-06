@@ -44,11 +44,13 @@
 
 .danmu input{
     width: 22vw;
+    height: 3vh;
     border-radius: 8px;
 }
 
 .danmu button{
     width: 7vw;
+    height: 4vh;
     cursor: pointer;
     border-radius: 8px;
     float: right;
@@ -61,9 +63,9 @@ span{
     z-index: 2;
     position: absolute;
     top: 4vh;
-    border: 2px solid rgb(199, 192, 192);
-    border-radius: 10px;
-    display: block;
+    /* border: 2px solid rgb(199, 192, 192);
+    border-radius: 10px; */
+    /* display: block; */
     height: 25px;
     line-height: 25px;
     padding: 0 10px 0 10px;
@@ -74,7 +76,7 @@ span{
 }
 
 
-/* @keyframes loop { 
+ @keyframes loop { 
     0%{transform: translateX(90vw);}
     /* 10%{transform: translateX(90vw);}
     20%{transform: translateX(80vw);}
@@ -84,6 +86,6 @@ span{
     60%{transform: translateX(40vw);}
     70%{transform: translateX(30vw);}
     80%{transform: translateX(20vw);}
-    90%{transform: translateX(10vw);} */
-    /* 100%{transform: translateX(-50vw);}
-} */ 
+    90%{transform: translateX(10vw);}  */
+    100%{transform: translateX(-50vw);}
+} 
