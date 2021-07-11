@@ -201,7 +201,7 @@
 .select .points{
     width: 20vw;
     margin-top: 27vw;
-    margin-left: 25vw;
+    margin-left: 5vw;
     z-index: 2;
     position: absolute;
 }
