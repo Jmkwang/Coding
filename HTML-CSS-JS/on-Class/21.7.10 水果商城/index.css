@@ -1,0 +1,23 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.top{
+    width: 100%;
+    height: 100px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: 300;
+    font-size: 15px;
+}
+
+.category{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
