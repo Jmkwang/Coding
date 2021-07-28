@@ -9,3 +9,5 @@
 //21.7.24 ITX network-card changed
 //21.7.25 Game
 //21.7.26 Network repair
+//21.7.27 Network repair
+//21.7.28 New ITX case
