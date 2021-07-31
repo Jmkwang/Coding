@@ -1,4 +1,4 @@
-//21.7.16 My eyes are sour.
+//21.7.16 Rest
 //21.7.17 Harmony OS
 //21.7.18 ITX
 //21.7.19 QL3X
@@ -11,3 +11,5 @@
 //21.7.26 Network repair
 //21.7.27 Network repair
 //21.7.28 New ITX case
+//21.7.29-30 Shenzhen tour
+// 21.7.31 Rest
