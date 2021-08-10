@@ -22,3 +22,4 @@
 //21.8.7 Holy！
 //21.8.8 Flight booked
 //21.8.9 Vocation
+//21.8.10 Tired
