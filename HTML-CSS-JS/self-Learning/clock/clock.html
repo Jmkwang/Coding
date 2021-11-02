@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .clock{
+            width:100%;
+            height:100vh;
+            background: rgb(208, 31, 243);
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <script>
+        //year, month, day, hour, minute, second
+        function get_time_element(){
+            const now_time = new Date();
+            const now_year = now_time.getHours;
+            const now_month = now_time.getMonth();
+            const now_date = now_time.getDate();
+            const now_day = now_time.getDay();
+            const now_hours = now_time.getHours();
+            const now_minutes = now_time.getMinutes();
+            const now_seconds = now_time.getSeconds();
+            console.log(now_time);
+        }
+        get_time_element();
+
+        function show_time_format(format_switch){
+            if(format_switch == 0){
+
+            }
+            if(format_switch == 1){
+
+            }
+        }
+    </script>
+
+    <div class="clock">
+        <span class="bg"></span>
+
+        <div class="time">
+
+            <div class="date">
+                <span class="year">2021</span>
+                <span class="month">11</span>
+                <span class="date">2</span>
+                <span class="day">Tue</span>
+            </div>
+
+            <div class="time">
+                <span class="hour">00</span>
+                <span class="minute">00</span>
+                <span class="seconds">00</span>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
