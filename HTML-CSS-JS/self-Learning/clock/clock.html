@@ -23,28 +23,47 @@
 </head>
 <body>
     <script>
-        //year, month, day, hour, minute, second
-        function get_time_element(){
-            const now_time = new Date();
-            const now_year = now_time.getHours;
-            const now_month = now_time.getMonth();
-            const now_date = now_time.getDate();
-            const now_day = now_time.getDay();
-            const now_hours = now_time.getHours();
-            const now_minutes = now_time.getMinutes();
-            const now_seconds = now_time.getSeconds();
-            console.log(now_time);
-        }
-        get_time_element();
 
-        function show_time_format(format_switch){
-            if(format_switch == 0){
+        (function(window, document){
+            //时间更新
+            setInterval(timeUpdate, 200);
 
+            //year, month, day, hour, minute, second
+            //取得时间
+            function timeUpdate(){
+                let now_time = new Date();
+                let now_year = now_time.getHours;
+                let now_month = now_time.getMonth();
+                let now_date = now_time.getDate();
+                let now_day = now_time.getDay();
+                let now_hours = now_time.getHours();
+                let now_minutes = now_time.getMinutes();
+                let now_seconds = now_time.getSeconds();
+                console.log(now_time);
             }
-            if(format_switch == 1){
 
+            //显示时间格式
+            function show_time_format(format_switch){
+                if(format_switch == 0){
+
+                }
+                if(format_switch == 1){
+
+                }
             }
-        }
+
+            //显示时间处理
+            function show_time_process(){
+                let show_year = document.getElementsByClassName("year")
+            }
+
+            
+
+
+        })(window, document);
+
+
+        
     </script>
 
     <div class="clock">
@@ -53,10 +72,10 @@
         <div class="time">
 
             <div class="date">
-                <span class="year">2021</span>
-                <span class="month">11</span>
-                <span class="date">2</span>
-                <span class="day">Tue</span>
+                <span class="year">0000</span>
+                <span class="month">00</span>
+                <span class="date">00</span>
+                <span class="day">Week</span>
             </div>
 
             <div class="time">
