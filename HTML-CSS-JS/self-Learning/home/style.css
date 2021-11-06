@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+	background-attachment: fixed; 
+}
+
+table {
+	width: 80vw;
+	height: 100vh;
+}
+
+.mine{
+	width: 265px;
+}
+
+.avatar{
+	width: 3vw;
+	height: 3vw;
+}
+
+.navbar {
+	margin: 0;
+	padding: 0;
+	height: 8vw;
+	border-radius:0px; 
+}
+
+.hanger {
+	width: 10vw;
+}
+
+.cate{
+	width: 5vw;
+	height: 5vh;
+}
+
+.srchsep{
+	width: 10vw;
+}
+
+.input{
+	height: 20px;
+	width: 10vw;
+	border-radius: 10px;
+	outline: none;
+	border-color: RGB(196,199,206);
+}
+
+.srchbox{
+	width: 3vw;
+	height: 5vw;
+	background-color: rgba(35,35,38,0.95);
+	border: none;
+	color: white;
+	border-radius: 8px;
+}
+
+.topsep{
+	width:20vw;
+}
+
+.sep{
+	width:5vw;
+}
+
+a {
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	text-decoration: none;
+	font-variant: normal;
+	color:#CCC;
+}
+
+a:hover {/*text hover*/
+	color:#CCC;
+	background-color:(15,15,15,0.95);
+	display:inherit;
+	border-radius:5px;
+}
+
+td .use {
+	background-color: rgba(35,35,38,0.95);
+	border-radius: 5px;
+	font-size:24px;
+	width:25vw;
+}
+
+a.use:hover {/*block behind text*/
+	background-color:rgba(20,20,35,0.15);
+	background-size:auto;
+}
+
+input.srchbox:hover {
+	background-color: rgba(150,150,154,0.6);
+	cursor:pointer;
+}
