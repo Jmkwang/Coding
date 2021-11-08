@@ -8,6 +8,8 @@ body {
 	background-attachment: fixed; 
 	margin: 0px;
 	padding: 0px;
+	width: 100vw;
+	height: 100vh;
 }
 
 .name{
@@ -18,19 +20,30 @@ a {
 	color:rgba(255,255,255,1);
 	font:"微软雅黑";
 	text-decoration:none;
-	font-size:37px;
+	font-size: 2vw;
 }
-#title {
+
+img{
+	width: 6vw;
+	height: 6vw;
+}
+  
+head{
+	height: 10vw;
+	width: 200px;
+}
+
+.title {
 	font-size: 40px;
-	color:rgba(255,95,0,1);
-	vertical-align: bottom;
-	height: auto;
-	width: auto;
-	float: left;
-	position: absolute;
-	left: 530px;
-	top: 90px;
+	color: white;
+	vertical-align: center;
+	position: relative;
+	height: 8vw;
+	width: 20vw;
+	left: 34vw;
+	top: 4vw;
 }
+
 .LeftNavBar {
 	border-top-style: none;
 	border-right-style: solid;
@@ -41,133 +54,38 @@ a {
 	margin:0px;
 	padding:0px;
 	text-decoration:none;
-	background-color:rgba(7,25,37,0.9);
+	background-color: rgba(0,0,0,0);
+	width: 10vw;
+	height: 10vh;
 }
+
+.leftsep{
+	width: 10vw;
+}
+
+.rightsep{
+	width: 20vw;
+}
+
 .leftin {
-	border-top-width: medium;
-	border-right-width: thin;
-	border-bottom-width: medium;
-	border-left-width: medium;
-	border-top-style: none;
-	border-right-style: solid;
-	border-bottom-style: none;
-	border-left-style: solid;
-	border-top-color: #dddddd;
-	border-right-color: #dddddd;
-	border-bottom-color: #dddddd;
-	border-left-color: #dddddd;
 	text-decoration:none;
-	margin:0px;
-	padding:0px;
+	width: 30vw;
+	height: 15vh;
+
 }
 .rightin {
-	border-top-width: medium;
-	border-right-width: medium;
-	border-bottom-width: medium;
-	border-left-width: thin;
-	border-top-style: none;
-	border-right-style: solid;
-	border-bottom-style: none;
-	border-left-style: solid;
-	border-top-color: #dddddd;
-	border-right-color: #dddddd;
-	border-bottom-color: #dddddd;
-	border-left-color: #dddddd;
 	text-decoration:none;
-	margin:0px;
-	padding:0px;
+	width: 30vw;
+	height: 15vh;
 }
-.listleftop {
-	border-top-width: medium;
-	border-right-width: medium;
-	border-bottom-width: medium;
-	border-left-width: medium;
-	border-top-style: solid;
-	border-right-style: solid;
-	border-bottom-style: none;
-	border-left-style: solid;
-	border-top-color: #dddddd;
-	border-right-color: #dddddd;
-	border-bottom-color: #dddddd;
-	border-left-color: #dddddd;
-	text-decoration:none;
-	border-radius:10px;
-	margin:0px;
-	padding:0px;
-}
-.listrightop {
-	border-top-width: medium;
-	border-right-width: medium;
-	border-bottom-width: medium;
-	border-left-width: medium;
-	border-top-style: solid;
-	border-right-style: solid;
-	border-bottom-style: none;
-	border-left-style: solid;
-	border-top-color: #dddddd;
-	border-right-color: #dddddd;
-	border-bottom-color: #dddddd;
-	border-left-color: #dddddd;
-	text-decoration:none;
-	border-radius:10px;
-    margin:0px;
-	padding:0px;
-}
-.listleftbt {
-	border-top-width: medium;
-	border-right-width: medium;
-	border-bottom-width: medium;
-	border-left-width: medium;
-	border-top-style: none;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-top-color: #dddddd;
-	border-right-color: #dddddd;
-	border-bottom-color: #dddddd;
-	border-left-color: #dddddd;
-	text-decoration:none;
-	border-radius:10px;
-	margin:0px;
-	padding:0px;
-}
-.listrightbt {
-	border-top-width: medium;
-	border-right-width: medium;
-	border-bottom-width: medium;
-	border-left-width: medium;
-	border-top-style: none;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-top-color: #dddddd;
-	border-right-color: #dddddd;
-	border-bottom-color: #dddddd;
-	border-left-color: #dddddd;
-	text-decoration:none;
-	border-radius:10px;
-	margin:0px;
-	padding:0px;
-}
+
 .showmidline {
-	border-top-width: thin;
-	border-right-width: thin;
-	border-bottom-width: thin;
-	border-left-width: thin;
-	border-top-style: none;
-	border-right-style: solid;
-	border-bottom-style: none;
-	border-left-style: none;
-	border-top-color: #dddddd;
-	border-right-color: #dddddd;
-	border-bottom-color: #dddddd;
-	border-left-color: #dddddd;
 	text-decoration:none;
 	margin:0px;
 	padding:0px;
 }
 .sepbgcolor {
-	background-color: rgba(220,220,220,0.5);
+	background-color: rgba(220, 220, 220, 0);
 }
 a:hover {
 	color: rgba(255,51,102,1);
