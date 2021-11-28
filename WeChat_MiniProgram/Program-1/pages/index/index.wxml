@@ -1,0 +1,121 @@
+<view class="top">
+    <view class="top-left">
+        跑腿
+    </view>
+
+    <view class="top-center" bindtap="top_onclick">
+        广州市
+    </view>
+</view>
+
+<view class="boy_image">
+    <view class="boy_image_one">平均37分钟送达</view>
+    <view class="boy_image_two">同 城 急 送 只 用 UU 跑 腿</view>
+</view>
+
+<view class="content">
+    <view class="content_top">
+        <view class="content_top_image">
+            <image
+                src="http://m.qpic.cn/psc?/V54X0fOa2SyvsH1daDEZ0wX06H445m6x/45NBuzDIW489QBoVep5mcUYq2pfYJUyOqy*1Laq3RUNIoktEkJmqA0*jtpNPfMKxrLb.rey*bJtSS5jVjFnNFShCf0J3uu6b6QaeDn.x64M!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4">
+            </image>
+        </view>
+
+        <view class="content_top_text">
+            附近有 <text>30</text> 位跑男，预计 <text>1</text> 分钟接单
+        </view>
+    </view>
+    <view class="content_center">
+        <view class="content_center_float">
+            <view wx:for="{{bang_arr}}" wx:key="Superscript">{{item.Superscript}}</view>
+        </view>
+        <view class="content_center_title">
+            <view class="{{item.text_choose}}" id="{{item.id}}" bindtap="bang_onclick" wx:for="{{bang_arr}}"
+                wx:key="text">
+                {{item.text}}
+            </view>
+        </view>
+        <view class="content_center_image">
+            <image src="{{item.image_choose ? huxian_image_url : null}}" wx:for="{{bang_arr}}" wx:key="image_url">
+            </image>
+        </view>
+
+
+        <view class="content_center_shipment" wx:if="{{give_take}}" bindtap="User_information_onclick">
+            <view class="content_center_shipment_point">
+            </view>
+
+            <view class="content_center_shipment_text">
+                <view>大学</view>
+                <view>完善发货人信息</view>
+            </view>
+            <view class="content_center_shipment_btn">
+                常用
+            </view>
+        </view>
+
+        <view class="content_center_destination" wx:else bindtap="User_information_onclick">
+
+            <view class="content_center_destination_point">
+            </view>
+
+            <view class="content_center_destination_text">
+                <input class="weui-input" placeholder="要送到哪里" />
+            </view>
+            <view class="content_center_destination_btn">
+                常用
+            </view>
+        </view>
+        <view class="content_center_destination" wx:if="{{give_take}}" bindtap="User_information_onclick">
+            <view class="content_center_destination_point">
+            </view>
+
+            <view class="content_center_destination_text">
+                <input class="weui-input" placeholder="从哪里取货" />
+            </view>
+            <view class="content_center_destination_btn">
+                常用
+            </view>
+        </view>
+        <view class="content_center_shipment" wx:else bindtap="User_information_onclick">
+            <view class="content_center_shipment_point">
+            </view>
+
+            <view class="content_center_shipment_text">
+                <view>大学</view>
+                <view>完善发货人信息</view>
+            </view>
+            <view class="content_center_shipment_btn">
+                常用
+            </view>
+        </view>
+
+
+
+
+
+    </view>
+    <view class="content_footer">
+        <view class="content_footer_item" wx:for="{{icon_image}}" wx:key="item" bindtap="button_onclick">
+            <image src="{{item.url}}">
+            </image>
+            {{item.name}}
+        </view>
+
+        <view class="content_footer_item" >
+            <image
+                src="http://m.qpic.cn/psc?/V54X0fOa2SyvsH1daDEZ0wX06H445m6x/ruAMsa53pVQWN7FLK88i5mEcmhFT1qbC5hmNQJliAo2YFJkryKs1eX4dbScFHFj0fuQpYsgL4cBx529GELfsJX*FEZNhyN*37ZqrK.EyjqI!/mnull&bo=CwHPAAAAAAADB.c!&rf=photolist&t=5">
+            </image>
+        </view>
+        <view class="content_footer_item">
+            <image
+                src="http://m.qpic.cn/psc?/V54X0fOa2SyvsH1daDEZ0wX06H445m6x/ruAMsa53pVQWN7FLK88i5mEcmhFT1qbC5hmNQJliAo2iHIB9Wze2YtbTiKOgSUNH7gGMtEUAIqwHm1IUZg6Wfo11edYV5.3Kj5xj7duvbXk!/mnull&bo=6ADBAAAAAAADBws!&rf=photolist&t=5">
+            </image>
+        </view>
+        <view class="content_footer_item">
+            <image
+                src="http://m.qpic.cn/psc?/V54X0fOa2SyvsH1daDEZ0wX06H445m6x/ruAMsa53pVQWN7FLK88i5lBf9GOZJbZE26znBRLLgwtzG9ahh1FAvCMd8ryvFr1p3N4XVHa*54kwbhOcfzqdOEzNB27h2kZ6nBhxysXE8wc!/mnull&bo=CAHcAAAAAAADB*c!&rf=photolist&t=5">
+            </image>
+        </view>
+    </view>
+</view>

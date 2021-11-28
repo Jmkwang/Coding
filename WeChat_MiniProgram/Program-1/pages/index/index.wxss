@@ -1,0 +1,258 @@
+.top {
+  width: 100%;
+  height: 150rpx;
+  background-color: #FB7B0D;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.top :nth-child(2) {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 150rpx;
+  color: #ffffff;
+}
+.top :nth-child(1) {
+  line-height: 150rpx;
+  color: #ffffff;
+  margin-left: 40rpx;
+}
+.boy_image {
+  width: 100%;
+  height: 320rpx;
+  margin-top: 150rpx;
+  background-color: #FB7B0D;
+  background-image: url(http://m.qpic.cn/psc?/V54X0fOa2SyvsH1daDEZ0wX06H445m6x/ruAMsa53pVQWN7FLK88i5sZdM4TWPqsZirjPfS5ITv77qRbEg*wTZWuMVHa8aaVfzZIliOQZyw*5HBq9o5.WBiRQ7ivl*u897QC0tj.eXKo!/mnull&bo=OASwAQAAAAABB60!&rf=photolist&t=5);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+.boy_image .boy_image_one {
+  width: 400rpx;
+  height: 75rpx;
+  position: absolute;
+  margin-top: 55rpx;
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 50rpx;
+  font-weight: 600;
+}
+.boy_image .boy_image_two {
+  width: 350rpx;
+  height: 55rpx;
+  position: absolute;
+  background-color: #FFFFFD;
+  margin-top: 145rpx;
+  margin-left: 55rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FB7B0D;
+  font-size: 25rpx;
+  border-radius: 25rpx 0 25rpx 0;
+}
+.content {
+  width: 100%;
+  height: 1200rpx;
+  background-color: #F9F7F8;
+  position: relative;
+  top: -20rpx;
+  border-radius: 25rpx 25rpx 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .content_top {
+  width: 90%;
+  height: 70rpx;
+  display: flex;
+  align-items: center;
+}
+.content .content_top .content_top_image {
+  width: 60rpx;
+  height: 60rpx;
+  background-color: rgba(251, 123, 13, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30rpx;
+}
+.content .content_top .content_top_image image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.content .content_top .content_top_text {
+  margin-left: 20rpx;
+  font-size: 25rpx;
+}
+.content .content_top .content_top_text :nth-child(1),
+.content .content_top .content_top_text :nth-child(2) {
+  color: #FB7B0D;
+}
+.content .content_center {
+  width: 90%;
+  height: 350rpx;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 30rpx;
+  margin-top: 10rpx;
+  flex-direction: column;
+  align-items: center;
+}
+.content .content_center .content_center_float {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  font-size: 18rpx;
+  height: 40rpx;
+  align-items: center;
+}
+.content .content_center .content_center_float view {
+  float: left;
+  display: flex;
+  position: absolute;
+  line-height: 30rpx;
+  justify-content: center;
+  align-items: center;
+}
+.content .content_center .content_center_float :nth-child(1) {
+  left: 170rpx;
+  background-color: #0EC1A3;
+  width: 60rpx;
+  border-radius: 30rpx 30rpx 30rpx 1rpx;
+}
+.content .content_center .content_center_float :nth-child(2) {
+  left: 290rpx;
+  background-color: #397DFD;
+  width: 60rpx;
+  border-radius: 30rpx 30rpx 30rpx 1rpx;
+}
+.content .content_center .content_center_float :nth-child(3) {
+  left: 410rpx;
+  background-color: #FB3639;
+  width: 60rpx;
+  border-radius: 30rpx 30rpx 30rpx 1rpx;
+}
+.content .content_center .content_center_title {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+}
+.content .content_center .content_center_title view {
+  width: 25%;
+  font-size: 25rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .content_center .content_center_title .content_center_title_choose {
+  font-size: 30rpx;
+  font-weight: 800;
+}
+.content .content_center .content_center_image image {
+  width: 70rpx;
+  height: 20rpx;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+}
+.content .content_center .content_center_shipment {
+  width: 90%;
+  display: flex;
+  height: 100rpx;
+  position: relative;
+  align-items: center;
+}
+.content .content_center .content_center_shipment .content_center_shipment_point {
+  position: absolute;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 10rpx;
+  background-color: black;
+  margin: 0 30rpx 0 30rpx;
+  top: 20rpx;
+}
+.content .content_center .content_center_shipment .content_center_shipment_text {
+  position: absolute;
+  left: 80rpx;
+}
+.content .content_center .content_center_shipment .content_center_shipment_text :nth-child(2) {
+  color: red;
+  font-size: 25rpx;
+}
+.content .content_center .content_center_shipment .content_center_shipment_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100rpx;
+  border: black solid 1rpx;
+  border-radius: 35rpx;
+  position: absolute;
+  right: 0;
+  height: 60rpx;
+}
+.content .content_center .content_center_destination {
+  width: 90%;
+  background-color: #F6F6F6;
+  display: flex;
+  height: 100rpx;
+  position: relative;
+  align-items: center;
+  border-radius: 30rpx;
+}
+.content .content_center .content_center_destination .content_center_destination_point {
+  position: absolute;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 10rpx;
+  background-color: #FF8124;
+  margin: 0 30rpx 0 30rpx;
+}
+.content .content_center .content_center_destination .content_center_destination_text {
+  position: absolute;
+  left: 80rpx;
+}
+.content .content_center .content_center_destination .content_center_destination_text :nth-child(2) {
+  color: #000000;
+  font-size: 35rpx;
+  font-weight: 600;
+}
+.content .content_center .content_center_destination .content_center_destination_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100rpx;
+  border: black solid 1rpx;
+  border-radius: 35rpx;
+  position: absolute;
+  right: 0;
+  height: 60rpx;
+}
+.content .content_footer {
+  display: flex;
+  justify-content: center;
+  height: 300rpx;
+  width: 90%;
+  flex-wrap: wrap;
+}
+.content .content_footer .content_footer_item {
+  width: 160rpx;
+  height: 150rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 25rpx;
+}
+.content .content_footer .content_footer_item image {
+  width: 100rpx;
+  height: 90rpx;
+}
