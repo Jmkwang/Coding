@@ -112,3 +112,14 @@ console.log("-------------------------------------")
 hollowtri(6)
 console.log("-------------------------------------")
 A(5,17)
+
+
+//shi xing cfx
+var chang = 5;
+var kuan = 6;
+for(var Kcount = 0; Kcount < kuan; Kcount++){
+    for(var Ccount = 0; Ccount < chang; Ccount++){
+        document.write("*");
+    }
+    document.write("<br>")
+}
